@@ -44,11 +44,14 @@ pico_set_program_version(Steno-Keyboard "0.1")
 pico_enable_stdio_uart(Steno-Keyboard 1) # Enable UART for debugging (optional)
 pico_enable_stdio_usb(Steno-Keyboard 0)  # MUST BE 0!
 
+add_subdirectory(sys_debounce)
+
 # Add the standard library to the build (Cleaned of corrupted spaces)
 target_link_libraries(Steno-Keyboard
     tinyusb_device
     tinyusb_board
     pico_stdlib
+    sys_debounce
 )
 
 # Add the standard include files to the build (Cleaned of corrupted spaces)

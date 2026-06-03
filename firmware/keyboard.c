@@ -1,4 +1,8 @@
+#include "pico/stdlib.h"
+#include "stdint.h"
+#include "tusb.h" 
 #include "keyboard.h"
+#include "debounce.h"
 
 #define KC_NONE       0    // declare when key is empty 
 
@@ -34,12 +38,30 @@
 #define R_KC_S        0x19 
 #define R_KC_T        0x18 
 
-#define MATRIX_ROW 6
-#define MATRIX_COLUMN 11
 
 // based on QMK's style of declaration
-#define MATRIX_ROW 6
-#define MATRIX_COLUMN 11
+const size_t col_pins[MATRIX_COLUMN] = {
+    COLUMN_00_PIN,  
+    COLUMN_01_PIN, 
+    COLUMN_02_PIN, 
+    COLUMN_03_PIN, 
+    COLUMN_04_PIN, 
+    COLUMN_05_PIN,
+    COLUMN_06_PIN,
+    COLUMN_07_PIN,
+    COLUMN_08_PIN,
+    COLUMN_09_PIN,
+    COLUMN_10_PIN
+};
+
+const size_t row_pins[MATRIX_ROW] = {
+    ROW_00_PIN, 
+    ROW_01_PIN, 
+    ROW_02_PIN, 
+    ROW_03_PIN,  
+    ROW_04_PIN, 
+    ROW_05_PIN 
+};
 
 #define LAYOUT(\
     k00, k01, k02, k03, k04,     k05, k06, k07, k08, k09, k10,\
@@ -62,8 +84,6 @@
     { KC_NONE, KC_NONE, KC_NONE, KC_NONE, KC_NONE, KC_NONE,   k25, k26, k27, KC_NONE, KC_NONE } \
 }
 
-
-
 // based on QMK's style of declaration
 static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
     [0] = LAYOUT(
@@ -72,29 +92,9 @@ static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
                         KC_HASH, L_KC_A, L_KC_O,   R_KC_E, R_KC_U, KC_HASH
     )
 };
-
-static size_t col_pins[MATRIX_COLUMN] = {
-    COLUMN_00_PIN,  
-    COLUMN_01_PIN, 
-    COLUMN_02_PIN, 
-    COLUMN_03_PIN, 
-    COLUMN_04_PIN, 
-    COLUMN_05_PIN,
-    COLUMN_06_PIN,
-    COLUMN_07_PIN,
-    COLUMN_08_PIN,
-    COLUMN_09_PIN,
-    COLUMN_10_PIN
-};
-static size_t row_pins[MATRIX_ROW] = {
-    ROW_00_PIN, 
-    ROW_01_PIN, 
-    ROW_02_PIN, 
-    ROW_03_PIN,  
-    ROW_04_PIN, 
-    ROW_05_PIN 
-};
-
+typedef struct{
+    unsigned char report_buffer[REQUIRED_BYTES];
+} KeyboardBitmap;
 
 // don't do anything here
 uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t *buffer, uint16_t reqlen)
@@ -152,13 +152,36 @@ void keyboard_task(void)
         for (int j = 0; j < MATRIX_ROW; ++j)
         {
             bool pin_state = gpio_get(row_pins[j]);
+            Key* key = &keys[j][i]; //access the specific HIGH key
+            uint32_t current_time = to_ms_since_boot(get_absolute_time()); 
 
             if (pin_state == true) // this is referring to HIGH
             {
-                sleep_ms(5); // temporary debounce
-                insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap);
+
+                if(key->state == KEY_FREE){
+                    
+                    //start the key lockdown
+                    key->start_time = current_time;
+                    key->state = KEY_LOCKED_OUT;
+                }       
+
+
+                if(key->state == KEY_LOCKED_OUT){
+                    if((current_time - key->start_time) >= DEBOUNCE_TIME){
+                        insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // immediately store the result
+                        key->state = KEY_FREE;
+                    }
+                }
+
+                // sleep_ms(5); // temporary debounce
                 current_scan_active  = true;
             }
+
+            else
+            {
+            keys[j][i].state = KEY_FREE; // release resets
+            }
+
         }
 
         gpio_put(col_pins[i], 0);

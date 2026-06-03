@@ -1,6 +1,7 @@
-#include "tusb.h"
-#include <stdint.h>
-#include "pico/stdlib.h"
+#ifndef KEYBOARD_H
+#define KEYBOARD_H
+
+#include <stddef.h>
 #include "hardware/gpio.h"
 
 // GPIO Declarations
@@ -22,19 +23,14 @@
 #define ROW_04_PIN 11
 #define ROW_05_PIN 10
 
+#define MATRIX_ROW 6
+#define MATRIX_COLUMN 11
 #define REQUIRED_BYTES 4
 
-
-typedef struct{
-    unsigned char report_buffer[REQUIRED_BYTES];
-} KeyboardBitmap;
-
-
-uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t *buffer, uint16_t reqlen);
-void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const *buffer, uint16_t bufsize);
-void insert_keybit_to_bitmap(uint8_t key, KeyboardBitmap *curr_bitmap);
-bool tud_hid_report(uint8_t report_id, void const* report, uint16_t len);
-
+extern const size_t col_pins[MATRIX_COLUMN];
+extern const size_t row_pins[MATRIX_ROW];
 
 // this will be called in the main fucntion for the whole keyboard stuff
 void keyboard_task(void);
+
+#endif
