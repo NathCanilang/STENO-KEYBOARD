@@ -16,7 +16,8 @@ enum KeyStates{
 
 typedef struct{
     uint32_t start_time;
-    enum KeyStates state;
+    enum KeyStates key_state;
+    bool init_reading;
 }__attribute__((packed)) Key;
 
 Key keys[NUM_ROW][NUM_COLUMN]; 

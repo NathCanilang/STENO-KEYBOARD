@@ -94,6 +94,7 @@ static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
 };
 typedef struct{
     unsigned char report_buffer[REQUIRED_BYTES];
+    unsigned char temp_bitmap[REQUIRED_BYTES]; // will be used to hold all the bits before finalizing it to the actual bitmap
 } KeyboardBitmap;
 
 // don't do anything here
@@ -131,10 +132,14 @@ void insert_keybit_to_bitmap(uint8_t key, KeyboardBitmap *curr_bitmap)
 }
 
 static void reset_array(KeyboardBitmap* bitmap){
+    //reset the TX Bolt bitmap flags placement kasi why not do it the manual way
     bitmap->report_buffer[0] = 0x00;
     bitmap->report_buffer[1] = 0x40;
     bitmap->report_buffer[2] = 0x80;
     bitmap->report_buffer[3] = 0xC0;
+
+    // reset the temp bitmap to all 0 since we don't need the TX Bolt sepcific flags yet
+    memset(&bitmap->temp_bitmap, 0, sizeof(bitmap->temp_bitmap));
 }
 
 
@@ -158,28 +163,30 @@ void keyboard_task(void)
             if (pin_state == true) // this is referring to HIGH
             {
 
-                if(key->state == KEY_FREE){
+                /*
+                Piss poor debounce attempt
+                */
+
+                if(key->key_state == KEY_FREE){
                     
                     //start the key lockdown
                     key->start_time = current_time;
-                    key->state = KEY_LOCKED_OUT;
+                    key->key_state = KEY_LOCKED_OUT;
                 }       
 
-
-                if(key->state == KEY_LOCKED_OUT){
-                    if((current_time - key->start_time) >= DEBOUNCE_TIME){
-                        insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // immediately store the result
-                        key->state = KEY_FREE;
-                    }
+                // horrible code in here
+                if((key->key_state == KEY_LOCKED_OUT) && ((current_time - key->start_time) >= DEBOUNCE_TIME)){
+                    key->key_state = KEY_FREE;
+                    insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // immediately store the result
                 }
 
                 // sleep_ms(5); // temporary debounce
-                current_scan_active  = true;
+                current_scan_active = true;
             }
 
             else
             {
-            keys[j][i].state = KEY_FREE; // release resets
+                keys[j][i].key_state = KEY_FREE; // release resets
             }
 
         }
@@ -187,9 +194,14 @@ void keyboard_task(void)
         gpio_put(col_pins[i], 0);
     }
 
+    if(current_scan_active){
+        key_stroke_active = current_scan_active; 
+        return; // don't attempt to send the bitmap since the chord is not yet done
+    }
+
     if(!current_scan_active && key_stroke_active){
         tud_cdc_write(&bitmap.report_buffer, REQUIRED_BYTES);
-        tud_cdc_write_flush();
+        tud_cdc_write_flush(); 
         reset_array(&bitmap);
 
     }
