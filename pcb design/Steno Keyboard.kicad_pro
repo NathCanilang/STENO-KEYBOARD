@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.6
         }
       },
       "diff_pair_dimensions": [
@@ -231,6 +231,10 @@
         {
           "diameter": 1.0,
           "drill": 0.6
+        },
+        {
+          "diameter": 1.5,
+          "drill": 1.0
         }
       ],
       "zones_allow_external_fillets": false
@@ -526,7 +530,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "../Negative Outputs/Steno Keyboard/",
+      "plot": "Gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -674,7 +678,7 @@
         "uuid": "9ab16ccf-b630-4864-af41-c202a50ae759"
       }
     ],
-    "used_designators": "SW2-27,D1-25,RZ1",
+    "used_designators": "SW2-27,D1-25,R1-19,RZ1",
     "variants": []
   },
   "sheets": [

@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "9ab16ccf-b630-4864-af41-c202a50ae759")
-	(paper "A4")
+	(paper "C")
 	(lib_symbols
 		(symbol "Diode:1N4148"
 			(pin_numbers
@@ -175,6 +175,146 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:Placeholder_Resistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Placeholder_Resistor_0_1"
+				(rectangle
+					(start 2.54 -1.016)
+					(end -2.54 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Placeholder_Resistor_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -857,238 +997,238 @@
 		)
 	)
 	(junction
-		(at 60.96 160.02)
+		(at 232.41 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "05795f2c-6120-4ca5-a880-eab23a898352")
+		(uuid "0836bd76-dfa2-41e6-a9d2-cc71059b259b")
 	)
 	(junction
-		(at 60.96 177.8)
+		(at 198.12 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "07600c0f-bf38-43aa-a79c-2568d95cf140")
+		(uuid "123bd44f-a913-40c4-87f7-d7a2bf985a02")
 	)
 	(junction
-		(at 167.64 77.47)
+		(at 379.73 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d2ef5d3-878e-4611-8b89-c9f77495cd98")
+		(uuid "146777fe-9836-49b3-9e8c-2e3b2788f27a")
 	)
 	(junction
-		(at 87.63 177.8)
+		(at 67.31 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d98f28c-2497-4357-a6d5-28cce3124897")
+		(uuid "1606cf9e-abb9-4f8a-819c-da949844f803")
 	)
 	(junction
-		(at 113.03 77.47)
+		(at 415.29 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "12f89c6f-5712-45bb-baa1-00bd9441040e")
+		(uuid "180aca6a-34a9-4e12-9abd-7e041c7b76d8")
 	)
 	(junction
-		(at 140.97 160.02)
+		(at 308.61 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "15d79006-afc1-4540-8da4-9c68acc29069")
+		(uuid "1b630264-35db-4392-be69-830e042d57ab")
 	)
 	(junction
-		(at 59.69 77.47)
+		(at 144.78 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "196f0f38-25fb-4f8e-9be2-355931bdffb2")
+		(uuid "24ae3b71-fb96-4df4-9101-11970a8fb05d")
 	)
 	(junction
-		(at 99.06 152.4)
+		(at 293.37 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25d61caa-cfe0-437f-bf3e-cf197aa3af4c")
+		(uuid "25353c2a-2c1c-4f12-96ea-d1a441ba228b")
 	)
 	(junction
-		(at 114.3 177.8)
+		(at 182.88 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "26571ddb-dae6-4754-b959-10af689b863f")
+		(uuid "2847924f-0810-430c-8c3e-7282463f09c0")
 	)
 	(junction
-		(at 59.69 95.25)
+		(at 328.93 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3c29ca90-0d2e-4470-9a59-a3ca7f0afc9d")
+		(uuid "2a3110dc-55e4-4661-a1fe-40b0091d36f0")
 	)
 	(junction
-		(at 182.88 85.09)
+		(at 438.15 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "48554ca1-4e97-4018-98ab-d6aeedca4886")
+		(uuid "2bab0bf9-cabb-4c92-92d6-d09540f05d51")
 	)
 	(junction
-		(at 74.93 102.87)
+		(at 198.12 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "52f8d9f9-3c95-4c90-86d9-1b8c8aad7b42")
+		(uuid "2e10c7a8-38f9-49da-bbc4-86d9dca680d5")
 	)
 	(junction
-		(at 125.73 152.4)
+		(at 182.88 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "578c6457-55af-4f1f-ac33-13da1e0fe58f")
+		(uuid "333cccad-58a1-4bf4-a54d-45c0617bd032")
 	)
 	(junction
-		(at 101.6 102.87)
+		(at 308.61 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a1851e0-20d7-499c-a230-d63591baeff9")
+		(uuid "36d5084c-1de2-449b-984b-4af25646ecff")
 	)
 	(junction
-		(at 74.93 85.09)
+		(at 364.49 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "652948fc-45f5-4e0b-b14b-aca394de91d0")
+		(uuid "4f9aaaa6-963f-4e8d-a673-735b1c0e2fc3")
 	)
 	(junction
-		(at 74.93 120.65)
+		(at 144.78 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6d02751d-77cf-4c45-b0cf-fb741fd461a1")
+		(uuid "53f9348c-10b4-46a2-a6c4-4e696ce1521b")
 	)
 	(junction
-		(at 128.27 85.09)
+		(at 217.17 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7409ff43-81ed-48e8-b12f-be0a90a0a1a7")
+		(uuid "55202389-7261-46c5-8845-6060815c974c")
 	)
 	(junction
-		(at 114.3 194.31)
+		(at 344.17 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "74cc4a32-8c02-4cbd-a4ce-d11b798c6fea")
+		(uuid "602013cd-7334-4bc0-8337-bc6a54b5b052")
 	)
 	(junction
-		(at 86.36 95.25)
+		(at 160.02 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7848ebf8-85f5-4888-aced-beee7074d5a6")
+		(uuid "6376074f-9c32-4553-884f-d250a374326e")
 	)
 	(junction
-		(at 156.21 85.09)
+		(at 379.73 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "800685de-3375-436c-a53f-ba622a3f152f")
+		(uuid "67464407-4873-4c5d-89b0-a0542cd4228c")
 	)
 	(junction
-		(at 86.36 77.47)
+		(at 453.39 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "824da8a0-6154-4ef1-a658-7640fafe5035")
+		(uuid "6b89c909-2bc7-4a29-a4fd-bfab6e31f952")
 	)
 	(junction
-		(at 101.6 120.65)
+		(at 121.92 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "851ed304-b4a8-4b55-a65b-5d7515d97625")
+		(uuid "76fbf2b3-dd6c-4d48-99cf-17932da4defc")
 	)
 	(junction
-		(at 140.97 194.31)
+		(at 121.92 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8704981e-220c-4dcb-83a5-81a33cba344f")
+		(uuid "817f0e27-a64b-4055-9d78-61790ff10ac5")
 	)
 	(junction
-		(at 194.31 77.47)
+		(at 344.17 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "888c0d97-c256-4209-8e2d-f2cc162f2c75")
+		(uuid "853959cf-0cc5-4f63-b62c-1a390ddee2a6")
 	)
 	(junction
-		(at 140.97 77.47)
+		(at 400.05 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8d01743c-d473-4419-a486-43e7bb3a47b5")
+		(uuid "94d5a565-622e-459c-8b70-ea4be8fa052b")
 	)
 	(junction
-		(at 113.03 95.25)
+		(at 232.41 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9157fa7e-deb9-47f8-8dc9-277e205ffe99")
+		(uuid "9c36492a-e7bc-424e-95de-c014dc83ebc4")
 	)
 	(junction
-		(at 45.72 152.4)
+		(at 364.49 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9475e747-4aa6-4452-92c8-a77e3c2a4249")
+		(uuid "9ec6dab5-06fb-4022-830a-52cf76f0ef82")
 	)
 	(junction
-		(at 114.3 160.02)
+		(at 198.12 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a8117ee-7720-4438-968e-75ca763dd09f")
+		(uuid "a260cb90-e729-45ce-9d91-110a901e8ef7")
 	)
 	(junction
-		(at 182.88 102.87)
+		(at 453.39 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0f24c24-9b3b-4c6a-a897-e69613393a6e")
+		(uuid "a5bdc920-a306-43c4-bb0c-1917f41b1a61")
 	)
 	(junction
-		(at 72.39 170.18)
+		(at 308.61 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b501d5d6-0344-489b-9162-b1b2523dd837")
+		(uuid "a60faad2-1476-4e18-b347-e2f560f5e23c")
 	)
 	(junction
-		(at 101.6 85.09)
+		(at 106.68 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bd586a81-947f-4cdb-ba39-d4e615aa348a")
+		(uuid "a9d57c45-b06a-4504-977d-eff6bd549206")
 	)
 	(junction
-		(at 99.06 170.18)
+		(at 217.17 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c41cb784-a514-461b-9cb8-337eab464901")
+		(uuid "b19f8a96-357e-4cf3-bbc4-43de17c49990")
 	)
 	(junction
-		(at 87.63 160.02)
+		(at 344.17 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d7e1af95-b841-492b-9ac3-e34a0d8a06ae")
+		(uuid "b50acc00-fcfe-46a1-933b-fd01e18ca9f9")
 	)
 	(junction
-		(at 125.73 170.18)
+		(at 481.33 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dd71a5cc-632d-4b31-b4b3-f48a9fc5c69b")
+		(uuid "bde99df8-5807-44fd-b496-0fd3b3b6d380")
 	)
 	(junction
-		(at 140.97 177.8)
+		(at 232.41 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "de7b94ac-3180-43b7-8ccc-57a0d94e1e16")
+		(uuid "ca1c8c95-40b5-4c91-ac89-72573ae0e8ca")
 	)
 	(junction
-		(at 156.21 102.87)
+		(at 415.29 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e4911779-8e4e-47cc-9f93-e007295d1246")
+		(uuid "dad03134-12fd-4197-90ba-4dfb74a07748")
 	)
 	(junction
-		(at 128.27 102.87)
+		(at 293.37 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f42900c3-645e-4e3e-80a5-ca4f1580b323")
+		(uuid "ef7baa84-9aec-4ff2-ac69-9ba7e774d0e4")
 	)
 	(junction
-		(at 19.05 152.4)
+		(at 328.93 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f4af59cc-a53f-4716-9344-3444d2fed677")
+		(uuid "f0b6c9c0-775c-43d4-9c2a-ef0b0375b249")
 	)
 	(junction
-		(at 72.39 152.4)
+		(at 160.02 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "feb732a4-422b-4b24-a517-62838b2ac852")
+		(uuid "fa18ecd3-dabd-4bd5-a40a-a2d7108a850a")
 	)
 	(wire
 		(pts
@@ -1112,7 +1252,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 95.25) (xy 113.03 113.03)
+			(xy 364.49 135.89) (xy 364.49 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1262,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 102.87) (xy 128.27 102.87)
+			(xy 344.17 143.51) (xy 360.68 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1282,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 160.02) (xy 60.96 160.02)
+			(xy 82.55 118.11) (xy 102.87 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1292,17 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 68.58) (xy 59.69 77.47)
+			(xy 368.3 118.11) (xy 379.73 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1438756c-16e8-4d01-8bb1-7af97df456bd")
+	)
+	(wire
+		(pts
+			(xy 293.37 101.6) (xy 293.37 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1162,13 +1312,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 68.58) (xy 113.03 77.47)
+			(xy 364.49 101.6) (xy 364.49 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "14d103a7-f20b-4db0-966c-26e2b4647ddd")
+	)
+	(wire
+		(pts
+			(xy 332.74 143.51) (xy 344.17 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "168952f8-dba6-492e-af6f-a4e2eceb8c6e")
 	)
 	(wire
 		(pts
@@ -1182,7 +1342,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 102.87) (xy 74.93 102.87)
+			(xy 281.94 143.51) (xy 308.61 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1352,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 68.58) (xy 167.64 77.47)
+			(xy 438.15 101.6) (xy 438.15 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1202,7 +1362,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 144.78) (xy 125.73 152.4)
+			(xy 217.17 102.87) (xy 217.17 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1222,7 +1382,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 85.09) (xy 128.27 85.09)
+			(xy 344.17 118.11) (xy 360.68 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1232,7 +1392,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 77.47) (xy 113.03 95.25)
+			(xy 364.49 110.49) (xy 364.49 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1242,7 +1402,17 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 170.18) (xy 99.06 186.69)
+			(xy 220.98 143.51) (xy 232.41 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f961585-b971-4429-91a7-3dfc8e769efe")
+	)
+	(wire
+		(pts
+			(xy 182.88 135.89) (xy 182.88 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1252,7 +1422,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 102.87) (xy 101.6 102.87)
+			(xy 308.61 143.51) (xy 325.12 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1262,7 +1432,27 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 85.09) (xy 101.6 85.09)
+			(xy 186.69 118.11) (xy 198.12 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2abcc4f6-02f5-4d3c-b281-2f70a5727205")
+	)
+	(wire
+		(pts
+			(xy 243.84 143.51) (xy 246.38 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b296dfb-5cd6-490e-a3de-70c3535d09f0")
+	)
+	(wire
+		(pts
+			(xy 308.61 118.11) (xy 325.12 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1292,7 +1482,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 152.4) (xy 45.72 170.18)
+			(xy 148.59 118.11) (xy 160.02 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "315ed8c4-a3e9-4e84-b0f4-318a3982bc1e")
+	)
+	(wire
+		(pts
+			(xy 106.68 110.49) (xy 106.68 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1302,13 +1502,23 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 170.18) (xy 125.73 186.69)
+			(xy 217.17 135.89) (xy 217.17 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "399675c1-f77c-4509-8791-9bb54932a68b")
+	)
+	(wire
+		(pts
+			(xy 403.86 143.51) (xy 415.29 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bf690d6-e5fe-40e4-b591-21d2d6ce6925")
 	)
 	(wire
 		(pts
@@ -1322,7 +1532,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 68.58) (xy 140.97 77.47)
+			(xy 400.05 101.6) (xy 400.05 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1332,7 +1542,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 120.65) (xy 74.93 120.65)
+			(xy 281.94 168.91) (xy 308.61 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1362,7 +1572,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 152.4) (xy 72.39 170.18)
+			(xy 144.78 110.49) (xy 144.78 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1372,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 143.51) (xy 99.06 152.4)
+			(xy 182.88 101.6) (xy 182.88 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1382,7 +1592,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 160.02) (xy 154.94 160.02)
+			(xy 232.41 118.11) (xy 236.22 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1392,7 +1602,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 177.8) (xy 60.96 177.8)
+			(xy 82.55 143.51) (xy 121.92 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1402,7 +1612,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 85.09) (xy 74.93 85.09)
+			(xy 281.94 118.11) (xy 308.61 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1422,7 +1632,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 160.02) (xy 114.3 160.02)
+			(xy 160.02 118.11) (xy 179.07 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1432,7 +1642,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 142.24) (xy 19.05 152.4)
+			(xy 67.31 100.33) (xy 67.31 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1442,7 +1652,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 177.8) (xy 140.97 177.8)
+			(xy 198.12 143.51) (xy 213.36 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1452,7 +1662,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 68.58) (xy 194.31 77.47)
+			(xy 481.33 101.6) (xy 481.33 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1462,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 102.87) (xy 209.55 102.87)
+			(xy 453.39 143.51) (xy 496.57 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1472,7 +1682,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 77.47) (xy 59.69 95.25)
+			(xy 293.37 110.49) (xy 293.37 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1482,7 +1692,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 120.65) (xy 128.27 120.65)
+			(xy 344.17 168.91) (xy 379.73 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1492,7 +1702,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 177.8) (xy 154.94 177.8)
+			(xy 232.41 143.51) (xy 236.22 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1502,13 +1712,23 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 142.24) (xy 45.72 152.4)
+			(xy 106.68 100.33) (xy 106.68 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7b949079-fcb6-4ed8-ad19-93683e2920e0")
+	)
+	(wire
+		(pts
+			(xy 332.74 118.11) (xy 344.17 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bfb2493-96d3-491e-b47e-9ad216745dee")
 	)
 	(wire
 		(pts
@@ -1522,7 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 85.09) (xy 209.55 85.09)
+			(xy 453.39 118.11) (xy 477.52 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1542,7 +1762,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 194.31) (xy 140.97 194.31)
+			(xy 198.12 168.91) (xy 232.41 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1552,7 +1772,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 77.47) (xy 86.36 95.25)
+			(xy 328.93 110.49) (xy 328.93 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1562,7 +1782,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 142.24) (xy 72.39 152.4)
+			(xy 144.78 100.33) (xy 144.78 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1572,7 +1792,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 152.4) (xy 19.05 170.18)
+			(xy 67.31 110.49) (xy 67.31 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1582,7 +1802,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 95.25) (xy 86.36 113.03)
+			(xy 328.93 135.89) (xy 328.93 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1592,7 +1812,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 77.47) (xy 194.31 95.25)
+			(xy 481.33 110.49) (xy 481.33 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1602,7 +1822,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 68.58) (xy 86.36 77.47)
+			(xy 403.86 118.11) (xy 415.29 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "927b1168-2840-4076-b7de-b6813ae6ce3c")
+	)
+	(wire
+		(pts
+			(xy 328.93 101.6) (xy 328.93 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1612,7 +1842,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 177.8) (xy 114.3 177.8)
+			(xy 160.02 143.51) (xy 179.07 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1622,7 +1852,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 194.31) (xy 114.3 194.31)
+			(xy 160.02 168.91) (xy 198.12 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1632,7 +1862,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 102.87) (xy 156.21 102.87)
+			(xy 379.73 143.51) (xy 396.24 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1642,7 +1872,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 95.25) (xy 59.69 113.03)
+			(xy 293.37 135.89) (xy 293.37 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1652,7 +1882,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 160.02) (xy 87.63 160.02)
+			(xy 441.96 118.11) (xy 453.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddf9fc9-5814-48aa-8953-f0b77946bbb8")
+	)
+	(wire
+		(pts
+			(xy 121.92 118.11) (xy 140.97 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1662,7 +1902,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 85.09) (xy 156.21 85.09)
+			(xy 379.73 118.11) (xy 396.24 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1702,7 +1942,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 152.4) (xy 99.06 170.18)
+			(xy 182.88 110.49) (xy 182.88 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1712,7 +1952,47 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 167.64 95.25)
+			(xy 186.69 143.51) (xy 198.12 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07c8a59-1e75-4fe6-af4d-60d82e85d176")
+	)
+	(wire
+		(pts
+			(xy 243.84 118.11) (xy 246.38 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2c96412-3e1d-4248-a6fc-e092d1d3750c")
+	)
+	(wire
+		(pts
+			(xy 485.14 118.11) (xy 496.57 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b87664b6-914b-47fe-af92-ed1a9b3c3bc2")
+	)
+	(wire
+		(pts
+			(xy 110.49 118.11) (xy 121.92 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8fef845-d428-4928-b87b-2de80b913e05")
+	)
+	(wire
+		(pts
+			(xy 438.15 110.49) (xy 438.15 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1722,7 +2002,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 182.88 102.87)
+			(xy 220.98 118.11) (xy 232.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c153b3ca-bfd6-49bf-86f2-2febf5ccaf2a")
+	)
+	(wire
+		(pts
+			(xy 415.29 143.51) (xy 453.39 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1732,7 +2022,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 152.4) (xy 125.73 170.18)
+			(xy 217.17 110.49) (xy 217.17 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1742,7 +2032,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 120.65) (xy 101.6 120.65)
+			(xy 308.61 168.91) (xy 344.17 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1752,7 +2042,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 85.09) (xy 182.88 85.09)
+			(xy 415.29 118.11) (xy 434.34 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1762,7 +2052,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 160.02) (xy 140.97 160.02)
+			(xy 198.12 118.11) (xy 213.36 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +2062,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 194.31) (xy 154.94 194.31)
+			(xy 232.41 168.91) (xy 246.38 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1782,7 +2072,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 170.18) (xy 72.39 186.69)
+			(xy 144.78 135.89) (xy 144.78 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1792,7 +2082,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 177.8) (xy 87.63 177.8)
+			(xy 121.92 143.51) (xy 160.02 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1812,13 +2102,23 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 77.47) (xy 140.97 95.25)
+			(xy 400.05 110.49) (xy 400.05 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe331929-32fa-4987-98c8-f6795588bf9e")
+	)
+	(wire
+		(pts
+			(xy 368.3 143.51) (xy 379.73 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe70c927-5178-42f3-a27d-c15b1fb76676")
 	)
 	(global_label "Row 1"
 		(shape input)
@@ -1846,7 +2146,7 @@
 	)
 	(global_label "Column 10"
 		(shape input)
-		(at 194.31 68.58 90)
+		(at 481.33 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1856,7 +2156,7 @@
 		)
 		(uuid "19e7a82d-584b-4b85-a703-72a3614f2c7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 55.1327 90)
+			(at 481.33 88.1527 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1870,7 +2170,7 @@
 	)
 	(global_label "Row 1"
 		(shape input)
-		(at 154.94 177.8 0)
+		(at 246.38 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1880,7 +2180,7 @@
 		)
 		(uuid "1a4e822d-7854-41bf-af1a-a955935ffcf9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.8518 177.8 0)
+			(at 255.2918 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1894,7 +2194,7 @@
 	)
 	(global_label "Column 4"
 		(shape input)
-		(at 125.73 144.78 90)
+		(at 217.17 102.87 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1904,7 +2204,7 @@
 		)
 		(uuid "1def512a-f19d-45f0-8008-a9661c3eb713")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 125.73 132.5422 90)
+			(at 217.17 90.6322 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1918,7 +2218,7 @@
 	)
 	(global_label "Column 8"
 		(shape input)
-		(at 140.97 68.58 90)
+		(at 400.05 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1928,7 +2228,7 @@
 		)
 		(uuid "27bb3bda-a5b5-4f15-9123-00d70223cecf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.97 56.3422 90)
+			(at 400.05 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1942,7 +2242,7 @@
 	)
 	(global_label "Column 7"
 		(shape input)
-		(at 113.03 68.58 90)
+		(at 364.49 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1952,7 +2252,7 @@
 		)
 		(uuid "2c2a5bc2-5d0b-4006-9888-2ad35287b058")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 56.3422 90)
+			(at 364.49 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1966,7 +2266,7 @@
 	)
 	(global_label "Column 9"
 		(shape input)
-		(at 167.64 68.58 90)
+		(at 438.15 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1976,7 +2276,7 @@
 		)
 		(uuid "359ae89b-ad1c-4f8b-85cc-372d50d039ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.64 56.3422 90)
+			(at 438.15 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2014,7 +2314,7 @@
 	)
 	(global_label "Row 3"
 		(shape input)
-		(at 48.26 85.09 180)
+		(at 281.94 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2024,7 +2324,7 @@
 		)
 		(uuid "56f154cb-e521-4ccb-9c5d-86dc94cfe1cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.3482 85.09 0)
+			(at 273.0282 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2062,7 +2362,7 @@
 	)
 	(global_label "Column 1"
 		(shape input)
-		(at 45.72 142.24 90)
+		(at 106.68 100.33 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2072,7 +2372,7 @@
 		)
 		(uuid "61265824-7d46-4e17-833e-2a6083f2405d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.72 130.0022 90)
+			(at 106.68 88.0922 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2158,7 +2458,7 @@
 	)
 	(global_label "Column 0"
 		(shape input)
-		(at 19.05 142.24 90)
+		(at 67.31 100.33 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2168,7 +2468,7 @@
 		)
 		(uuid "7656acb3-6da6-499a-ad8c-bbc26a779a75")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.05 130.0022 90)
+			(at 67.31 88.0922 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2230,7 +2530,7 @@
 	)
 	(global_label "Row 5"
 		(shape input)
-		(at 48.26 120.65 180)
+		(at 281.94 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2240,7 +2540,7 @@
 		)
 		(uuid "9e4d1ef4-8c58-4f83-a160-ca6854b5beca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.3482 120.65 0)
+			(at 273.0282 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2302,7 +2602,7 @@
 	)
 	(global_label "Row 4"
 		(shape input)
-		(at 48.26 102.87 180)
+		(at 281.94 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2312,7 +2612,7 @@
 		)
 		(uuid "b07f8aa2-4a79-495f-b506-794a941bc9f5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.3482 102.87 0)
+			(at 273.0282 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2326,7 +2626,7 @@
 	)
 	(global_label "Column 2"
 		(shape input)
-		(at 72.39 142.24 90)
+		(at 144.78 100.33 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2336,7 +2636,7 @@
 		)
 		(uuid "b42115de-d851-412c-bc3f-816b28c1ff5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 130.0022 90)
+			(at 144.78 88.0922 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2350,7 +2650,7 @@
 	)
 	(global_label "Row 2"
 		(shape input)
-		(at 154.94 194.31 0)
+		(at 246.38 168.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2360,7 +2660,7 @@
 		)
 		(uuid "bc0b799e-832d-4580-b191-14d7bc4b1d94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.8518 194.31 0)
+			(at 255.2918 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2374,7 +2674,7 @@
 	)
 	(global_label "Column 5"
 		(shape input)
-		(at 59.69 68.58 90)
+		(at 293.37 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2384,7 +2684,7 @@
 		)
 		(uuid "c2b25744-2370-4813-9347-b5e81679c2ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.69 56.3422 90)
+			(at 293.37 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2446,7 +2746,7 @@
 	)
 	(global_label "Column 6"
 		(shape input)
-		(at 86.36 68.58 90)
+		(at 328.93 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2456,7 +2756,7 @@
 		)
 		(uuid "e0624e45-d878-4c88-9d08-79cf8543af7d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.36 56.3422 90)
+			(at 328.93 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2590,7 +2890,7 @@
 	)
 	(global_label "Column 3"
 		(shape input)
-		(at 99.06 143.51 90)
+		(at 182.88 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2600,7 +2900,7 @@
 		)
 		(uuid "f3aaf5e1-65ce-40a8-aaaa-fb1eaa0c9793")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.06 131.2722 90)
+			(at 182.88 89.3622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2614,7 +2914,7 @@
 	)
 	(global_label "Row 0"
 		(shape input)
-		(at 154.94 160.02 0)
+		(at 246.38 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2624,7 +2924,7 @@
 		)
 		(uuid "fe27af78-3aed-47e1-8cd4-bee6b3d93204")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.8518 160.02 0)
+			(at 255.2918 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2638,7 +2938,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 114.3 190.5 90)
+		(at 198.12 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2649,7 +2949,7 @@
 		(fields_autoplaced yes)
 		(uuid "03f3e511-9251-497d-870c-8652d0c100c4")
 		(property "Reference" "D12"
-			(at 116.84 189.2299 90)
+			(at 200.66 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2660,7 +2960,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 116.84 191.7699 90)
+			(at 200.66 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2670,8 +2970,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 114.3 190.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.12 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2682,7 +2982,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 114.3 190.5 0)
+			(at 198.12 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2693,7 +2993,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 114.3 190.5 0)
+			(at 198.12 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2704,7 +3004,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 114.3 190.5 0)
+			(at 198.12 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,7 +3015,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 114.3 190.5 0)
+			(at 198.12 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2742,7 +3042,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 74.93 99.06 90)
+		(at 308.61 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2753,7 +3053,7 @@
 		(fields_autoplaced yes)
 		(uuid "09227b3b-cbea-4ee2-9336-bf517b422f92")
 		(property "Reference" "D20"
-			(at 77.47 97.7899 90)
+			(at 311.15 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2764,7 +3064,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 77.47 100.3299 90)
+			(at 311.15 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2774,8 +3074,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 74.93 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 308.61 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2786,7 +3086,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 74.93 99.06 0)
+			(at 308.61 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2797,7 +3097,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 74.93 99.06 0)
+			(at 308.61 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2808,7 +3108,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 74.93 99.06 0)
+			(at 308.61 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2819,7 +3119,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 99.06 0)
+			(at 308.61 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2846,7 +3146,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 93.98 95.25 0)
+		(at 336.55 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2857,7 +3157,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b0ee43e-63de-4703-9161-6a2a47e47568")
 		(property "Reference" "SW21"
-			(at 93.98 87.63 0)
+			(at 336.55 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2867,7 +3167,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 93.98 90.17 0)
+			(at 336.55 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2877,7 +3177,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 93.98 95.25 0)
+			(at 336.55 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2888,7 +3188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 95.25 0)
+			(at 336.55 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2899,7 +3199,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 93.98 95.25 0)
+			(at 336.55 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2925,8 +3225,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 217.17 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1286a97e-fb18-431c-86c3-605ff0451047")
+		(property "Reference" "R7"
+			(at 217.17 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 217.17 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 217.17 145.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 217.17 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bd5eeae-3b96-4f4e-9859-5f299c94b965")
+		)
+		(pin "2"
+			(uuid "733e2dd8-c3bc-4664-9904-b6ca7244aa58")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 156.21 81.28 90)
+		(at 415.29 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2937,7 +3317,7 @@
 		(fields_autoplaced yes)
 		(uuid "12f76c51-6dbd-4b20-8a19-b2b7e1e14948")
 		(property "Reference" "D17"
-			(at 158.75 80.0099 90)
+			(at 417.83 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2948,7 +3328,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 158.75 82.5499 90)
+			(at 417.83 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2958,8 +3338,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 156.21 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 415.29 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +3350,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 156.21 81.28 0)
+			(at 415.29 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +3361,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 156.21 81.28 0)
+			(at 415.29 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2992,7 +3372,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 156.21 81.28 0)
+			(at 415.29 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3003,7 +3383,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 156.21 81.28 0)
+			(at 415.29 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3029,8 +3409,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 182.88 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14b6c4bf-a605-4cf2-9ec1-c135b845ff48")
+		(property "Reference" "R6"
+			(at 182.88 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 182.88 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 182.88 145.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ef12bb6-ee01-41a4-9e6d-2dc84e8552df")
+		)
+		(pin "2"
+			(uuid "e819ff95-c325-4fbd-b99b-2ff340478cb4")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 60.96 173.99 90)
+		(at 121.92 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3041,7 +3501,7 @@
 		(fields_autoplaced yes)
 		(uuid "14e485f5-94a9-4dde-bc82-2e769864e0cb")
 		(property "Reference" "D7"
-			(at 63.5 172.7199 90)
+			(at 124.46 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3052,7 +3512,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 63.5 175.2599 90)
+			(at 124.46 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3062,8 +3522,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 60.96 173.99 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3074,7 +3534,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 60.96 173.99 0)
+			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3085,7 +3545,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 60.96 173.99 0)
+			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3096,7 +3556,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 60.96 173.99 0)
+			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3107,7 +3567,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 60.96 173.99 0)
+			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3134,7 +3594,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 175.26 77.47 0)
+		(at 445.77 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3145,7 +3605,7 @@
 		(fields_autoplaced yes)
 		(uuid "2531790f-8dbf-4e38-9bb4-ccd04e64dc4f")
 		(property "Reference" "SW18"
-			(at 175.26 69.85 0)
+			(at 445.77 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3155,7 +3615,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 175.26 72.39 0)
+			(at 445.77 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3165,7 +3625,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 175.26 77.47 0)
+			(at 445.77 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3176,7 +3636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 77.47 0)
+			(at 445.77 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3187,7 +3647,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 175.26 77.47 0)
+			(at 445.77 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3214,7 +3674,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 74.93 116.84 90)
+		(at 308.61 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3225,7 +3685,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d0b57a2-b409-4c67-8d46-e16f4683f860")
 		(property "Reference" "D26"
-			(at 77.47 115.5699 90)
+			(at 311.15 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3236,7 +3696,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 77.47 118.1099 90)
+			(at 311.15 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3246,8 +3706,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 74.93 116.84 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 308.61 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3258,7 +3718,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 74.93 116.84 0)
+			(at 308.61 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3269,7 +3729,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 74.93 116.84 0)
+			(at 308.61 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3280,7 +3740,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 74.93 116.84 0)
+			(at 308.61 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3291,7 +3751,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 116.84 0)
+			(at 308.61 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3318,7 +3778,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 67.31 77.47 0)
+		(at 300.99 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3329,7 +3789,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f9d59e9-0980-40bc-b999-7023f825cd54")
 		(property "Reference" "SW14"
-			(at 67.31 69.85 0)
+			(at 300.99 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3339,7 +3799,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 67.31 72.39 0)
+			(at 300.99 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3349,7 +3809,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 67.31 77.47 0)
+			(at 300.99 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3360,7 +3820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 77.47 0)
+			(at 300.99 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3371,7 +3831,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 67.31 77.47 0)
+			(at 300.99 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3398,7 +3858,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 106.68 152.4 0)
+		(at 190.5 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3409,7 +3869,7 @@
 		(fields_autoplaced yes)
 		(uuid "331c450d-5c8f-4ce4-a05b-8de0c723fc18")
 		(property "Reference" "SW4"
-			(at 106.68 144.78 0)
+			(at 190.5 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3419,7 +3879,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 106.68 147.32 0)
+			(at 190.5 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3429,7 +3889,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 106.68 152.4 0)
+			(at 190.5 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3440,7 +3900,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 152.4 0)
+			(at 190.5 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3451,7 +3911,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 106.68 152.4 0)
+			(at 190.5 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3478,7 +3938,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 120.65 113.03 0)
+		(at 372.11 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3489,7 +3949,7 @@
 		(fields_autoplaced yes)
 		(uuid "41d49b29-61ad-4b4a-a306-afce1d5177cc")
 		(property "Reference" "SW28"
-			(at 120.65 105.41 0)
+			(at 372.11 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3499,7 +3959,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 120.65 107.95 0)
+			(at 372.11 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3509,7 +3969,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 120.65 113.03 0)
+			(at 372.11 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3520,7 +3980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 113.03 0)
+			(at 372.11 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3531,7 +3991,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 120.65 113.03 0)
+			(at 372.11 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3557,8 +4017,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 53.34 152.4 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 106.68 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3567,9 +4027,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4bd4be41-2771-47d7-a9b3-4be24e7a3b5c")
-		(property "Reference" "SW2"
-			(at 53.34 144.78 0)
+		(uuid "4b7ccb9a-cfba-47a2-9aff-df349ecfde33")
+		(property "Reference" "R1"
+			(at 106.68 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3578,8 +4038,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 53.34 147.32 0)
+		(property "Value" "0"
+			(at 106.68 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3588,8 +4048,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 53.34 152.4 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 106.68 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3600,7 +4060,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 152.4 0)
+			(at 106.68 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 106.68 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ca3bc44-b58a-42bb-b351-ebb3fcfc40a3")
+		)
+		(pin "2"
+			(uuid "9d9352cb-5dcf-4f62-86ff-2ca13fa0e8e6")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 114.3 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4bd4be41-2771-47d7-a9b3-4be24e7a3b5c")
+		(property "Reference" "SW2"
+			(at 114.3 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 114.3 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 114.3 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3611,7 +4151,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 53.34 152.4 0)
+			(at 114.3 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3638,7 +4178,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 148.59 77.47 0)
+		(at 407.67 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3649,7 +4189,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f31c925-e16f-4e74-9b88-d7cf2ad1d8ae")
 		(property "Reference" "SW17"
-			(at 148.59 69.85 0)
+			(at 407.67 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3659,7 +4199,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 148.59 72.39 0)
+			(at 407.67 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3669,7 +4209,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 148.59 77.47 0)
+			(at 407.67 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3680,7 +4220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 77.47 0)
+			(at 407.67 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3691,7 +4231,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 148.59 77.47 0)
+			(at 407.67 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3718,7 +4258,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 101.6 116.84 90)
+		(at 344.17 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3729,7 +4269,7 @@
 		(fields_autoplaced yes)
 		(uuid "59e9651a-8fda-4356-a2f9-b47fc47d401b")
 		(property "Reference" "D27"
-			(at 104.14 115.5699 90)
+			(at 346.71 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3740,7 +4280,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 104.14 118.1099 90)
+			(at 346.71 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3750,8 +4290,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 101.6 116.84 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 344.17 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3762,7 +4302,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 101.6 116.84 0)
+			(at 344.17 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3773,7 +4313,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 101.6 116.84 0)
+			(at 344.17 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3784,7 +4324,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 101.6 116.84 0)
+			(at 344.17 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3795,7 +4335,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 101.6 116.84 0)
+			(at 344.17 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3822,7 +4362,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 175.26 95.25 0)
+		(at 445.77 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3833,7 +4373,7 @@
 		(fields_autoplaced yes)
 		(uuid "603e6d39-34a4-451f-975e-9924c441048e")
 		(property "Reference" "SW24"
-			(at 175.26 87.63 0)
+			(at 445.77 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3843,7 +4383,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 175.26 90.17 0)
+			(at 445.77 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3853,7 +4393,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 175.26 95.25 0)
+			(at 445.77 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3864,7 +4404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 95.25 0)
+			(at 445.77 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3875,7 +4415,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 175.26 95.25 0)
+			(at 445.77 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3902,7 +4442,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 114.3 156.21 90)
+		(at 198.12 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3913,7 +4453,7 @@
 		(fields_autoplaced yes)
 		(uuid "61cdb0e6-7b46-46f7-abb3-48a0be519c24")
 		(property "Reference" "D4"
-			(at 116.84 154.9399 90)
+			(at 200.66 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3924,7 +4464,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 116.84 157.4799 90)
+			(at 200.66 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3934,8 +4474,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 114.3 156.21 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3946,7 +4486,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 114.3 156.21 0)
+			(at 198.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3957,7 +4497,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 114.3 156.21 0)
+			(at 198.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3968,7 +4508,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 114.3 156.21 0)
+			(at 198.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3979,7 +4519,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 114.3 156.21 0)
+			(at 198.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4005,8 +4545,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 67.31 95.25 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 144.78 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4015,9 +4555,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "643a8a49-d290-44e1-b1c9-792323e550d8")
-		(property "Reference" "SW20"
-			(at 67.31 87.63 0)
+		(uuid "63085bb3-b06b-4cf6-b9cc-081fe1f58ca3")
+		(property "Reference" "R2"
+			(at 144.78 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4026,8 +4566,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 67.31 90.17 0)
+		(property "Value" "0"
+			(at 144.78 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4036,8 +4576,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 67.31 95.25 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 144.78 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4048,7 +4588,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 95.25 0)
+			(at 144.78 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 144.78 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "156fc3ac-97a0-4673-9b77-b92f51f31e25")
+		)
+		(pin "2"
+			(uuid "d4373285-5579-4de3-9bcb-425223551b25")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 300.99 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "643a8a49-d290-44e1-b1c9-792323e550d8")
+		(property "Reference" "SW20"
+			(at 300.99 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 300.99 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 300.99 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4059,7 +4679,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 67.31 95.25 0)
+			(at 300.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4085,8 +4705,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 80.01 152.4 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 328.93 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4095,9 +4715,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6b0a2932-09e4-4368-adf6-f6d4f81ef38e")
-		(property "Reference" "SW3"
-			(at 80.01 144.78 0)
+		(uuid "692aabcc-c56a-4baf-baf0-aeaf0a820c04")
+		(property "Reference" "R9"
+			(at 328.93 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4106,8 +4726,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 80.01 147.32 0)
+		(property "Value" "0"
+			(at 328.93 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4116,8 +4736,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 80.01 152.4 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 328.93 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4128,7 +4748,167 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 152.4 0)
+			(at 328.93 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 328.93 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6786b57b-65c4-4b76-b262-93042ff8eab2")
+		)
+		(pin "2"
+			(uuid "41423bd6-76f8-4448-9290-9dd363a8546d")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 240.03 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ae9d594-11b2-439a-9415-32c63a4c6d8e")
+		(property "Reference" "R17"
+			(at 240.03 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 240.03 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 240.03 119.888 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c62a935-61b4-48d6-96a0-7771dac828e6")
+		)
+		(pin "2"
+			(uuid "bbb0bd90-7edc-43db-a639-800a391a576e")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 152.4 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b0a2932-09e4-4368-adf6-f6d4f81ef38e")
+		(property "Reference" "SW3"
+			(at 152.4 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 152.4 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 152.4 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4139,7 +4919,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 80.01 152.4 0)
+			(at 152.4 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4166,7 +4946,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 60.96 156.21 90)
+		(at 121.92 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4177,7 +4957,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b464b8b-5583-4f90-bb9d-a4e5edbfe026")
 		(property "Reference" "D2"
-			(at 63.5 154.9399 90)
+			(at 124.46 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4188,7 +4968,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 63.5 157.4799 90)
+			(at 124.46 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4198,8 +4978,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 60.96 156.21 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4210,7 +4990,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 60.96 156.21 0)
+			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,7 +5001,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 60.96 156.21 0)
+			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4232,7 +5012,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 60.96 156.21 0)
+			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4243,7 +5023,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 60.96 156.21 0)
+			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4270,7 +5050,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 101.6 99.06 90)
+		(at 344.17 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4281,7 +5061,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f258b18-7be8-486b-ba84-c9be784e35cd")
 		(property "Reference" "D21"
-			(at 104.14 97.7899 90)
+			(at 346.71 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4292,7 +5072,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 104.14 100.3299 90)
+			(at 346.71 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4302,8 +5082,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 101.6 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 344.17 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4314,7 +5094,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 101.6 99.06 0)
+			(at 344.17 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4325,7 +5105,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 101.6 99.06 0)
+			(at 344.17 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4336,7 +5116,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 101.6 99.06 0)
+			(at 344.17 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,7 +5127,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 101.6 99.06 0)
+			(at 344.17 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4374,7 +5154,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 148.59 95.25 0)
+		(at 407.67 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4385,7 +5165,7 @@
 		(fields_autoplaced yes)
 		(uuid "70f5c2c4-477d-4c50-9a49-42574c7ea4fe")
 		(property "Reference" "SW23"
-			(at 148.59 87.63 0)
+			(at 407.67 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4395,7 +5175,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 148.59 90.17 0)
+			(at 407.67 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4405,7 +5185,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 148.59 95.25 0)
+			(at 407.67 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4416,7 +5196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 95.25 0)
+			(at 407.67 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4427,7 +5207,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 148.59 95.25 0)
+			(at 407.67 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4454,7 +5234,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 106.68 186.69 0)
+		(at 190.5 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4465,7 +5245,7 @@
 		(fields_autoplaced yes)
 		(uuid "79a917c3-2d83-4fc2-833f-33b9019c61ae")
 		(property "Reference" "SW12"
-			(at 106.68 179.07 0)
+			(at 190.5 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4475,7 +5255,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 106.68 181.61 0)
+			(at 190.5 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4485,7 +5265,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 106.68 186.69 0)
+			(at 190.5 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4496,7 +5276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 186.69 0)
+			(at 190.5 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4507,7 +5287,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 106.68 186.69 0)
+			(at 190.5 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4534,7 +5314,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 182.88 99.06 90)
+		(at 453.39 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4545,7 +5325,7 @@
 		(fields_autoplaced yes)
 		(uuid "821c2874-1f11-481c-89a5-5342227c3a87")
 		(property "Reference" "D24"
-			(at 185.42 97.7899 90)
+			(at 455.93 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4556,7 +5336,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 185.42 100.3299 90)
+			(at 455.93 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4566,8 +5346,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 182.88 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 453.39 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4578,7 +5358,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 182.88 99.06 0)
+			(at 453.39 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4589,7 +5369,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 182.88 99.06 0)
+			(at 453.39 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4600,7 +5380,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 182.88 99.06 0)
+			(at 453.39 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4611,7 +5391,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 182.88 99.06 0)
+			(at 453.39 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4638,7 +5418,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 140.97 173.99 90)
+		(at 232.41 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4649,7 +5429,7 @@
 		(fields_autoplaced yes)
 		(uuid "83401102-25b8-4a63-b557-167a63681bea")
 		(property "Reference" "D10"
-			(at 143.51 172.7199 90)
+			(at 234.95 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4660,7 +5440,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 143.51 175.2599 90)
+			(at 234.95 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4670,8 +5450,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 140.97 173.99 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4682,7 +5462,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 140.97 173.99 0)
+			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4693,7 +5473,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 140.97 173.99 0)
+			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4704,7 +5484,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 140.97 173.99 0)
+			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4715,7 +5495,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 140.97 173.99 0)
+			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4742,7 +5522,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 101.6 81.28 90)
+		(at 344.17 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4753,7 +5533,7 @@
 		(fields_autoplaced yes)
 		(uuid "881f9a17-37a7-476c-80b2-a91f9bfa6a3a")
 		(property "Reference" "D15"
-			(at 104.14 80.0099 90)
+			(at 346.71 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4764,7 +5544,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 104.14 82.5499 90)
+			(at 346.71 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4774,8 +5554,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 101.6 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 344.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4786,7 +5566,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 101.6 81.28 0)
+			(at 344.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4797,7 +5577,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 101.6 81.28 0)
+			(at 344.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4808,7 +5588,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 101.6 81.28 0)
+			(at 344.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4819,7 +5599,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 101.6 81.28 0)
+			(at 344.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4846,7 +5626,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 128.27 81.28 90)
+		(at 379.73 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4857,7 +5637,7 @@
 		(fields_autoplaced yes)
 		(uuid "902dd59e-77d4-4317-9d51-22d10ba60208")
 		(property "Reference" "D16"
-			(at 130.81 80.0099 90)
+			(at 382.27 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4868,7 +5648,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 130.81 82.5499 90)
+			(at 382.27 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4878,8 +5658,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 128.27 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 379.73 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4890,7 +5670,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 128.27 81.28 0)
+			(at 379.73 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4901,7 +5681,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 128.27 81.28 0)
+			(at 379.73 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4912,7 +5692,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 128.27 81.28 0)
+			(at 379.73 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4923,7 +5703,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 81.28 0)
+			(at 379.73 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4949,8 +5729,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 481.33 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90376edb-0cd8-45bc-a749-c45c10a19149")
+		(property "Reference" "R13"
+			(at 481.33 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 481.33 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 481.33 119.888 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 481.33 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 481.33 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0b74c843-d524-4b29-93de-3d08a4e63fe8")
+		)
+		(pin "2"
+			(uuid "94ed5d0a-974a-416b-9d2c-3b44a9dac1b8")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 140.97 156.21 90)
+		(at 232.41 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4961,7 +5821,7 @@
 		(fields_autoplaced yes)
 		(uuid "919753f4-4254-4b0d-8226-94bfb5994992")
 		(property "Reference" "D5"
-			(at 143.51 154.9399 90)
+			(at 234.95 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4972,7 +5832,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 143.51 157.4799 90)
+			(at 234.95 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4982,8 +5842,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 140.97 156.21 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 232.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4994,7 +5854,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 140.97 156.21 0)
+			(at 232.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5005,7 +5865,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 140.97 156.21 0)
+			(at 232.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5016,7 +5876,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 140.97 156.21 0)
+			(at 232.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5027,7 +5887,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 140.97 156.21 0)
+			(at 232.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5054,7 +5914,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 80.01 186.69 0)
+		(at 152.4 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5065,7 +5925,7 @@
 		(fields_autoplaced yes)
 		(uuid "96a6800f-75a0-4541-8cfa-7f84ca3b2913")
 		(property "Reference" "SW11"
-			(at 80.01 179.07 0)
+			(at 152.4 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5075,7 +5935,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 80.01 181.61 0)
+			(at 152.4 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5085,7 +5945,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 80.01 186.69 0)
+			(at 152.4 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5096,7 +5956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 186.69 0)
+			(at 152.4 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5107,7 +5967,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 80.01 186.69 0)
+			(at 152.4 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5133,8 +5993,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 106.68 170.18 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 400.05 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5143,9 +6003,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9d2e5cfc-36a2-4af8-a8a5-b99f8a436f27")
-		(property "Reference" "SW9"
-			(at 106.68 162.56 0)
+		(uuid "9734ec37-f247-47d3-a4b8-0e89db1b80c6")
+		(property "Reference" "R11"
+			(at 400.05 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5154,8 +6014,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 106.68 165.1 0)
+		(property "Value" "0"
+			(at 400.05 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5164,8 +6024,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 106.68 170.18 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 400.05 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5176,7 +6036,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 170.18 0)
+			(at 400.05 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 400.05 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d35c0aa-5b4c-4e6f-b7db-ecb676f4f117")
+		)
+		(pin "2"
+			(uuid "02993f15-42fb-4ef5-8336-6459c05a297e")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 190.5 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d2e5cfc-36a2-4af8-a8a5-b99f8a436f27")
+		(property "Reference" "SW9"
+			(at 190.5 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 190.5 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 190.5 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5187,7 +6127,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 106.68 170.18 0)
+			(at 190.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5214,7 +6154,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 114.3 173.99 90)
+		(at 198.12 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5225,7 +6165,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e1d6c05-0dcf-41cb-ae59-5f980afe475b")
 		(property "Reference" "D9"
-			(at 116.84 172.7199 90)
+			(at 200.66 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5236,7 +6176,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 116.84 175.2599 90)
+			(at 200.66 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5246,8 +6186,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 114.3 173.99 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.12 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5258,7 +6198,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 114.3 173.99 0)
+			(at 198.12 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +6209,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 114.3 173.99 0)
+			(at 198.12 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5280,7 +6220,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 114.3 173.99 0)
+			(at 198.12 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5291,7 +6231,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 114.3 173.99 0)
+			(at 198.12 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +6258,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 201.93 95.25 0)
+		(at 488.95 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5329,7 +6269,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e59a396-2a87-4ad4-b585-6aedefeb3268")
 		(property "Reference" "SW25"
-			(at 201.93 87.63 0)
+			(at 488.95 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5339,7 +6279,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 201.93 90.17 0)
+			(at 488.95 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5349,7 +6289,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 201.93 95.25 0)
+			(at 488.95 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5360,7 +6300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 95.25 0)
+			(at 488.95 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5371,7 +6311,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 201.93 95.25 0)
+			(at 488.95 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5398,7 +6338,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 133.35 186.69 0)
+		(at 224.79 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5409,7 +6349,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1a836f9-ca5b-4ec3-b89d-23357d1fdc2c")
 		(property "Reference" "SW13"
-			(at 133.35 179.07 0)
+			(at 224.79 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5419,7 +6359,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 133.35 181.61 0)
+			(at 224.79 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5429,7 +6369,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 133.35 186.69 0)
+			(at 224.79 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5440,7 +6380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 186.69 0)
+			(at 224.79 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5451,7 +6391,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 133.35 186.69 0)
+			(at 224.79 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5478,7 +6418,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 74.93 81.28 90)
+		(at 308.61 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5489,7 +6429,7 @@
 		(fields_autoplaced yes)
 		(uuid "a41eda42-4e80-4f76-8350-efdd91685483")
 		(property "Reference" "D14"
-			(at 77.47 80.0099 90)
+			(at 311.15 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5500,7 +6440,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 77.47 82.5499 90)
+			(at 311.15 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5510,8 +6450,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 74.93 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 308.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5522,7 +6462,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 74.93 81.28 0)
+			(at 308.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5533,7 +6473,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 74.93 81.28 0)
+			(at 308.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5544,7 +6484,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 74.93 81.28 0)
+			(at 308.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5555,7 +6495,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 81.28 0)
+			(at 308.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,7 +6522,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 128.27 116.84 90)
+		(at 379.73 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5593,7 +6533,7 @@
 		(fields_autoplaced yes)
 		(uuid "a709fa26-cffa-4c35-b80b-94d873c9e03a")
 		(property "Reference" "D28"
-			(at 130.81 115.5699 90)
+			(at 382.27 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5604,7 +6544,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 130.81 118.1099 90)
+			(at 382.27 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5614,8 +6554,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 128.27 116.84 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 379.73 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5626,7 +6566,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 128.27 116.84 0)
+			(at 379.73 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5637,7 +6577,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 128.27 116.84 0)
+			(at 379.73 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5648,7 +6588,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 128.27 116.84 0)
+			(at 379.73 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5659,7 +6599,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 116.84 0)
+			(at 379.73 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5686,7 +6626,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 93.98 113.03 0)
+		(at 336.55 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5697,7 +6637,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7d62799-22cd-437c-87b5-a4bf4fa2133f")
 		(property "Reference" "SW27"
-			(at 93.98 105.41 0)
+			(at 336.55 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5707,7 +6647,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 93.98 107.95 0)
+			(at 336.55 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5717,7 +6657,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 93.98 113.03 0)
+			(at 336.55 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,7 +6668,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 113.03 0)
+			(at 336.55 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5739,7 +6679,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 93.98 113.03 0)
+			(at 336.55 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5766,7 +6706,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 87.63 173.99 90)
+		(at 160.02 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5777,7 +6717,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7f37d36-15f1-4ade-bfca-c60283d4ff3f")
 		(property "Reference" "D8"
-			(at 90.17 172.7199 90)
+			(at 162.56 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5788,7 +6728,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 90.17 175.2599 90)
+			(at 162.56 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5798,8 +6738,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 87.63 173.99 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5810,7 +6750,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 87.63 173.99 0)
+			(at 160.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5821,7 +6761,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 87.63 173.99 0)
+			(at 160.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5832,7 +6772,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 87.63 173.99 0)
+			(at 160.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5843,7 +6783,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 87.63 173.99 0)
+			(at 160.02 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6015,7 +6955,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 87.63 190.5 90)
+		(at 160.02 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6026,7 +6966,7 @@
 		(fields_autoplaced yes)
 		(uuid "aea93cd2-42f4-4bab-85fa-df32b18a760d")
 		(property "Reference" "D11"
-			(at 90.17 189.2299 90)
+			(at 162.56 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6037,7 +6977,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 90.17 191.7699 90)
+			(at 162.56 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6047,8 +6987,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 87.63 190.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.02 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6059,7 +6999,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 87.63 190.5 0)
+			(at 160.02 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +7010,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 87.63 190.5 0)
+			(at 160.02 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +7021,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 87.63 190.5 0)
+			(at 160.02 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +7032,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 87.63 190.5 0)
+			(at 160.02 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6118,8 +7058,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 120.65 95.25 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 182.88 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6128,9 +7068,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b03cdd8e-2319-499d-b26a-1023ce51a794")
-		(property "Reference" "SW22"
-			(at 120.65 87.63 0)
+		(uuid "aeb4855b-20de-4134-a3b3-1b91c585cf10")
+		(property "Reference" "R3"
+			(at 182.88 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6139,8 +7079,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 120.65 90.17 0)
+		(property "Value" "0"
+			(at 182.88 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6149,8 +7089,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 120.65 95.25 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 182.88 119.888 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6161,7 +7101,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 95.25 0)
+			(at 182.88 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c49af069-ccb2-4471-85e7-2151b2408f16")
+		)
+		(pin "2"
+			(uuid "8fdad65c-a0bb-48fc-ae64-198b5beeedaa")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 372.11 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b03cdd8e-2319-499d-b26a-1023ce51a794")
+		(property "Reference" "SW22"
+			(at 372.11 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 372.11 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 372.11 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6172,7 +7192,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 120.65 95.25 0)
+			(at 372.11 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6199,7 +7219,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 133.35 170.18 0)
+		(at 224.79 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6210,7 +7230,7 @@
 		(fields_autoplaced yes)
 		(uuid "b23d65b3-5055-4660-ab85-8f699f4f4bdf")
 		(property "Reference" "SW10"
-			(at 133.35 162.56 0)
+			(at 224.79 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6220,7 +7240,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 133.35 165.1 0)
+			(at 224.79 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6230,7 +7250,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 133.35 170.18 0)
+			(at 224.79 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +7261,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 170.18 0)
+			(at 224.79 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,7 +7272,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 133.35 170.18 0)
+			(at 224.79 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6279,7 +7299,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 133.35 152.4 0)
+		(at 224.79 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6290,7 +7310,7 @@
 		(fields_autoplaced yes)
 		(uuid "b69d2e0e-fab0-458e-a873-d87b95fa08d5")
 		(property "Reference" "SW5"
-			(at 133.35 144.78 0)
+			(at 224.79 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6300,7 +7320,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 133.35 147.32 0)
+			(at 224.79 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6310,7 +7330,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 133.35 152.4 0)
+			(at 224.79 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6321,7 +7341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 152.4 0)
+			(at 224.79 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6332,7 +7352,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 133.35 152.4 0)
+			(at 224.79 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6359,7 +7379,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 93.98 77.47 0)
+		(at 336.55 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6370,7 +7390,7 @@
 		(fields_autoplaced yes)
 		(uuid "b83044d4-5ad0-4612-a2be-c60383a1f2c3")
 		(property "Reference" "SW15"
-			(at 93.98 69.85 0)
+			(at 336.55 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6380,7 +7400,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 93.98 72.39 0)
+			(at 336.55 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6390,7 +7410,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 93.98 77.47 0)
+			(at 336.55 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6401,7 +7421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 77.47 0)
+			(at 336.55 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6412,7 +7432,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 93.98 77.47 0)
+			(at 336.55 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6439,7 +7459,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 87.63 156.21 90)
+		(at 160.02 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6450,7 +7470,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9d6b8f2-7f02-4684-883d-8be1b88f682d")
 		(property "Reference" "D3"
-			(at 90.17 154.9399 90)
+			(at 162.56 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6461,7 +7481,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 90.17 157.4799 90)
+			(at 162.56 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6471,8 +7491,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 87.63 156.21 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.02 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6483,7 +7503,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 87.63 156.21 0)
+			(at 160.02 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6494,7 +7514,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 87.63 156.21 0)
+			(at 160.02 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6505,7 +7525,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 87.63 156.21 0)
+			(at 160.02 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6516,7 +7536,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 87.63 156.21 0)
+			(at 160.02 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6543,7 +7563,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 209.55 81.28 90)
+		(at 496.57 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6554,7 +7574,7 @@
 		(fields_autoplaced yes)
 		(uuid "baafeaf8-6b75-4ff7-9728-35e0a8851894")
 		(property "Reference" "D19"
-			(at 212.09 80.0099 90)
+			(at 499.11 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6565,7 +7585,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 212.09 82.5499 90)
+			(at 499.11 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6575,8 +7595,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 209.55 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 496.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6587,7 +7607,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 209.55 81.28 0)
+			(at 496.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6598,7 +7618,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 209.55 81.28 0)
+			(at 496.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6609,7 +7629,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 209.55 81.28 0)
+			(at 496.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6620,7 +7640,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 209.55 81.28 0)
+			(at 496.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6646,8 +7666,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 217.17 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bad3e84e-a132-46c0-8fac-bdbf47942922")
+		(property "Reference" "R4"
+			(at 217.17 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 217.17 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 217.17 119.888 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 217.17 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "867dc873-c652-418b-9d8b-b06064f8a4af")
+		)
+		(pin "2"
+			(uuid "0fabfdb1-0618-40f8-b353-8bca703e9bd7")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 140.97 190.5 90)
+		(at 232.41 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6658,7 +7758,7 @@
 		(fields_autoplaced yes)
 		(uuid "badd1113-99ab-4442-9797-f82684c2b90b")
 		(property "Reference" "D13"
-			(at 143.51 189.2299 90)
+			(at 234.95 163.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6669,7 +7769,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 143.51 191.7699 90)
+			(at 234.95 166.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6679,8 +7779,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 140.97 190.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 232.41 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6691,7 +7791,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 140.97 190.5 0)
+			(at 232.41 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6702,7 +7802,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 140.97 190.5 0)
+			(at 232.41 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6713,7 +7813,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 140.97 190.5 0)
+			(at 232.41 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6724,7 +7824,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 140.97 190.5 0)
+			(at 232.41 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6751,7 +7851,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 156.21 99.06 90)
+		(at 415.29 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6762,7 +7862,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1d96e4e-7646-4634-8833-1a3c77b8ca11")
 		(property "Reference" "D23"
-			(at 158.75 97.7899 90)
+			(at 417.83 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6773,7 +7873,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 158.75 100.3299 90)
+			(at 417.83 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6783,8 +7883,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 156.21 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 415.29 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6795,7 +7895,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 156.21 99.06 0)
+			(at 415.29 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6806,7 +7906,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 156.21 99.06 0)
+			(at 415.29 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6817,7 +7917,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 156.21 99.06 0)
+			(at 415.29 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6828,7 +7928,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 156.21 99.06 0)
+			(at 415.29 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6855,7 +7955,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 34.29 173.99 90)
+		(at 82.55 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6866,7 +7966,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1dbaff0-d3af-4620-8a72-c7230a62fba6")
 		(property "Reference" "D6"
-			(at 36.83 172.7199 90)
+			(at 85.09 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6877,7 +7977,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 36.83 175.2599 90)
+			(at 85.09 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6887,8 +7987,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 34.29 173.99 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 82.55 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6899,7 +7999,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 34.29 173.99 0)
+			(at 82.55 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6910,7 +8010,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 34.29 173.99 0)
+			(at 82.55 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6921,7 +8021,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 34.29 173.99 0)
+			(at 82.55 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6932,7 +8032,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 34.29 173.99 0)
+			(at 82.55 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6958,8 +8058,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 240.03 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c250e9cd-e5e8-4e9f-b044-7f576b8c0301")
+		(property "Reference" "R18"
+			(at 240.03 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 240.03 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 240.03 145.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "910c454c-5eef-409e-a962-78392d836176")
+		)
+		(pin "2"
+			(uuid "7310c996-eb56-4654-865b-4477cfbd11ab")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 128.27 99.06 90)
+		(at 379.73 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6970,7 +8150,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5ffd2b2-ac8c-4765-a7c8-791f6a511ffc")
 		(property "Reference" "D22"
-			(at 130.81 97.7899 90)
+			(at 382.27 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6981,7 +8161,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 130.81 100.3299 90)
+			(at 382.27 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6991,8 +8171,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 128.27 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 379.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7003,7 +8183,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 128.27 99.06 0)
+			(at 379.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7014,7 +8194,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 128.27 99.06 0)
+			(at 379.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7025,7 +8205,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 128.27 99.06 0)
+			(at 379.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7036,7 +8216,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 99.06 0)
+			(at 379.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7063,7 +8243,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 26.67 170.18 0)
+		(at 74.93 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7074,7 +8254,7 @@
 		(fields_autoplaced yes)
 		(uuid "c85226f6-3267-41a8-9973-3ee6761c6f66")
 		(property "Reference" "SW6"
-			(at 26.67 162.56 0)
+			(at 74.93 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7084,7 +8264,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 26.67 165.1 0)
+			(at 74.93 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7094,7 +8274,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 26.67 170.18 0)
+			(at 74.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7105,7 +8285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 170.18 0)
+			(at 74.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7116,7 +8296,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 26.67 170.18 0)
+			(at 74.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7143,7 +8323,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 53.34 170.18 0)
+		(at 114.3 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7154,7 +8334,7 @@
 		(fields_autoplaced yes)
 		(uuid "d290acee-1a27-4567-8009-648e23ac2d29")
 		(property "Reference" "SW7"
-			(at 53.34 162.56 0)
+			(at 114.3 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7164,7 +8344,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 53.34 165.1 0)
+			(at 114.3 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7174,7 +8354,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 53.34 170.18 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7185,7 +8365,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 170.18 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7196,7 +8376,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 53.34 170.18 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7223,7 +8403,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 120.65 77.47 0)
+		(at 372.11 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7234,7 +8414,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3029976-9bf3-4273-8bd8-42a0985ebe29")
 		(property "Reference" "SW16"
-			(at 120.65 69.85 0)
+			(at 372.11 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7244,7 +8424,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 120.65 72.39 0)
+			(at 372.11 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7254,7 +8434,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 120.65 77.47 0)
+			(at 372.11 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7265,7 +8445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 77.47 0)
+			(at 372.11 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7276,7 +8456,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 120.65 77.47 0)
+			(at 372.11 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7302,8 +8482,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 364.49 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d44f0336-1bdb-4806-80d7-309909170ff3")
+		(property "Reference" "R16"
+			(at 364.49 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 364.49 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 364.49 145.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 364.49 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cad0e96-cfd1-48f6-a016-41e673392a5d")
+		)
+		(pin "2"
+			(uuid "13a9d5e5-664b-4154-8576-d280b3dc97c5")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 34.29 156.21 90)
+		(at 82.55 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7314,7 +8574,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1a6c881-9ef9-4cc4-9339-f3390039e93a")
 		(property "Reference" "D1"
-			(at 36.83 154.9399 90)
+			(at 85.09 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7325,7 +8585,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 36.83 157.4799 90)
+			(at 85.09 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7335,8 +8595,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 34.29 156.21 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 82.55 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7347,7 +8607,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 34.29 156.21 0)
+			(at 82.55 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7358,7 +8618,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 34.29 156.21 0)
+			(at 82.55 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7369,7 +8629,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 34.29 156.21 0)
+			(at 82.55 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7380,7 +8640,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 34.29 156.21 0)
+			(at 82.55 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7407,7 +8667,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 201.93 77.47 0)
+		(at 488.95 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7418,7 +8678,7 @@
 		(fields_autoplaced yes)
 		(uuid "e44639cc-2ccd-46c0-86e0-934dfabfb0bb")
 		(property "Reference" "SW19"
-			(at 201.93 69.85 0)
+			(at 488.95 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7428,7 +8688,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 201.93 72.39 0)
+			(at 488.95 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7438,7 +8698,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 201.93 77.47 0)
+			(at 488.95 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7449,7 +8709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 77.47 0)
+			(at 488.95 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7460,7 +8720,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 201.93 77.47 0)
+			(at 488.95 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7486,8 +8746,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 67.31 113.03 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 400.05 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7496,9 +8756,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ecd7f8a5-f10e-4848-b75d-f3a4669cc2ad")
-		(property "Reference" "SW26"
-			(at 67.31 105.41 0)
+		(uuid "e95c8db9-4558-4b8e-b86e-4077c02432c3")
+		(property "Reference" "R19"
+			(at 400.05 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7507,8 +8767,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 67.31 107.95 0)
+		(property "Value" "0"
+			(at 400.05 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7517,8 +8777,8 @@
 				)
 			)
 		)
-		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 67.31 113.03 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 400.05 145.288 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7529,7 +8789,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 113.03 0)
+			(at 400.05 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 400.05 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50ee1e91-3e6d-4e99-b308-59d38adfb029")
+		)
+		(pin "2"
+			(uuid "424e0c22-6ca8-4853-850c-dffb4402e48b")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 300.99 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecd7f8a5-f10e-4848-b75d-f3a4669cc2ad")
+		(property "Reference" "SW26"
+			(at 300.99 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 300.99 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
+			(at 300.99 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7540,7 +8880,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 67.31 113.03 0)
+			(at 300.99 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7567,7 +8907,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 80.01 170.18 0)
+		(at 152.4 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7578,7 +8918,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee3d93b6-aacf-4a89-ac39-f4f5a40797e0")
 		(property "Reference" "SW8"
-			(at 80.01 162.56 0)
+			(at 152.4 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7588,7 +8928,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 80.01 165.1 0)
+			(at 152.4 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7598,7 +8938,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 80.01 170.18 0)
+			(at 152.4 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7609,7 +8949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 170.18 0)
+			(at 152.4 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7620,7 +8960,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 80.01 170.18 0)
+			(at 152.4 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7647,7 +8987,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 26.67 152.4 0)
+		(at 74.93 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7658,7 +8998,7 @@
 		(fields_autoplaced yes)
 		(uuid "f34d971e-1671-4925-b574-eaa4a09fe463")
 		(property "Reference" "SW1"
-			(at 26.67 144.78 0)
+			(at 74.93 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7668,7 +9008,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 26.67 147.32 0)
+			(at 74.93 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7678,7 +9018,7 @@
 			)
 		)
 		(property "Footprint" "AnaviArrow_KailhMX_Socket:Kailh_socket_MX"
-			(at 26.67 152.4 0)
+			(at 74.93 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7689,7 +9029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 152.4 0)
+			(at 74.93 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7700,7 +9040,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 26.67 152.4 0)
+			(at 74.93 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7726,8 +9066,88 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 328.93 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3d87b47-dc49-49dd-94e3-6d7b7945bc7c")
+		(property "Reference" "R15"
+			(at 328.93 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 328.93 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 328.93 145.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 328.93 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 328.93 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2f59d30-d3a2-418e-8d47-75a258fcd65e")
+		)
+		(pin "2"
+			(uuid "d2e84269-16fa-4c20-ac10-451050cad17c")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 209.55 99.06 90)
+		(at 496.57 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7738,7 +9158,7 @@
 		(fields_autoplaced yes)
 		(uuid "f44abaea-9040-4a11-a44a-c5fc1fb8417a")
 		(property "Reference" "D25"
-			(at 212.09 97.7899 90)
+			(at 499.11 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7749,7 +9169,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 212.09 100.3299 90)
+			(at 499.11 140.9699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7759,8 +9179,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 209.55 99.06 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 496.57 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7771,7 +9191,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 209.55 99.06 0)
+			(at 496.57 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7782,7 +9202,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 209.55 99.06 0)
+			(at 496.57 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7793,7 +9213,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 209.55 99.06 0)
+			(at 496.57 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7804,7 +9224,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 209.55 99.06 0)
+			(at 496.57 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7830,8 +9250,168 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 438.15 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f80c3d3b-3f6e-45e1-b40c-49e2eb316315")
+		(property "Reference" "R12"
+			(at 438.15 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 438.15 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 438.15 119.888 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 438.15 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd42dd79-35a3-4325-a5b6-be68dfa5520b")
+		)
+		(pin "2"
+			(uuid "dc816263-4291-45ff-9fb0-1776c0a5e7db")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 364.49 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc3dcf20-b590-4fba-a8cb-5b5dbe1d26b2")
+		(property "Reference" "R10"
+			(at 364.49 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 364.49 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 364.49 119.888 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 364.49 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "460bfc5a-98d0-4843-b474-ea823957c040")
+		)
+		(pin "2"
+			(uuid "1942d664-3202-4573-baae-a3546eb6ed16")
+		)
+		(instances
+			(project "Steno Keyboard"
+				(path "/9ab16ccf-b630-4864-af41-c202a50ae759"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 182.88 81.28 90)
+		(at 453.39 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7842,7 +9422,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff622112-6282-49d5-8a55-e5c8b54780ce")
 		(property "Reference" "D18"
-			(at 185.42 80.0099 90)
+			(at 455.93 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7853,7 +9433,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 185.42 82.5499 90)
+			(at 455.93 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7863,8 +9443,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 182.88 81.28 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 453.39 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7875,7 +9455,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 182.88 81.28 0)
+			(at 453.39 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7886,7 +9466,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 182.88 81.28 0)
+			(at 453.39 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7897,7 +9477,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 182.88 81.28 0)
+			(at 453.39 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7908,7 +9488,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 182.88 81.28 0)
+			(at 453.39 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
