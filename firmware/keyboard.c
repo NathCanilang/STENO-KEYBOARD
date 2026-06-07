@@ -94,7 +94,6 @@ static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
 };
 typedef struct{
     unsigned char report_buffer[REQUIRED_BYTES];
-    unsigned char temp_bitmap[REQUIRED_BYTES]; // will be used to hold all the bits before finalizing it to the actual bitmap
 } KeyboardBitmap;
 
 // don't do anything here
@@ -122,7 +121,7 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
 
 
 static KeyboardBitmap bitmap = {0};
-void insert_keybit_to_bitmap(uint8_t key, KeyboardBitmap *curr_bitmap)
+static void insert_keybit_to_bitmap(uint8_t key, KeyboardBitmap *curr_bitmap)
 {
     if(key == KC_NONE){ return; };
     
@@ -137,9 +136,6 @@ static void reset_array(KeyboardBitmap* bitmap){
     bitmap->report_buffer[1] = 0x40;
     bitmap->report_buffer[2] = 0x80;
     bitmap->report_buffer[3] = 0xC0;
-
-    // reset the temp bitmap to all 0 since we don't need the TX Bolt sepcific flags yet
-    memset(&bitmap->temp_bitmap, 0, sizeof(bitmap->temp_bitmap));
 }
 
 
@@ -172,15 +168,16 @@ void keyboard_task(void)
                     //start the key lockdown
                     key->start_time = current_time;
                     key->key_state = KEY_LOCKED_OUT;
+                    key->init_reading = pin_state;
                 }       
 
                 // horrible code in here
                 if((key->key_state == KEY_LOCKED_OUT) && ((current_time - key->start_time) >= DEBOUNCE_TIME)){
                     key->key_state = KEY_FREE;
-                    insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // immediately store the result
+                    if(key->init_reading == pin_state){
+                        insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // store the result once the reading stabilizes
+                    }
                 }
-
-                // sleep_ms(5); // temporary debounce
                 current_scan_active = true;
             }
 

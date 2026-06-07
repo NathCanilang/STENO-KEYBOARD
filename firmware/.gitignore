@@ -1,3 +1,7 @@
 build
 !.vscode/*
 notes.txt
+tests/
+test/
+TESTING_SETUP_SUMMARY.txt
+UNIT_TESTING_GUIDE.txt

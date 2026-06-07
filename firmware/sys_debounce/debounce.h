@@ -18,9 +18,12 @@ typedef struct{
     uint32_t start_time;
     enum KeyStates key_state;
     bool init_reading;
-}__attribute__((packed)) Key;
+}Key;
 
-Key keys[NUM_ROW][NUM_COLUMN]; 
+extern Key keys[NUM_ROW][NUM_COLUMN]; 
+
+void set_key_states(Key* key_states);
+
 
 #endif
 
