@@ -1,10 +1,11 @@
-#ifndef EAGER_DB_H
-#define EAGER_DB_H
+#ifndef DEBOUNCE_H
+#define DEBOUNCE_H
 
 #include <stdint.h>
-#include "pico/stdlib.h"
+#include <stdbool.h>
+// #include "pico/stdlib.h"
 
-#define DEBOUNCE_TIME   5 // this is in ms
+#define DEBOUNCE_TIME   5000 // this is in ms
 
 #define NUM_ROW 6
 #define NUM_COLUMN 11
@@ -17,13 +18,15 @@ enum KeyStates{
 typedef struct{
     uint32_t start_time;
     enum KeyStates key_state;
-    bool init_reading;
+    bool sample_reading;
 }Key;
 
 extern Key keys[NUM_ROW][NUM_COLUMN]; 
 
-void set_key_states(Key* key_states);
-
+void set_key_states(uint8_t row, uint8_t col, Key* key_states);
+Key get_key_states(uint8_t row, uint8_t col);
+void reset_key_debounce_time(uint8_t row, uint8_t col, uint32_t curr_time);
+bool check_debounce_time_elapsed(Key *key, uint32_t curr_time, bool curr_pin_state);
 
 #endif
 

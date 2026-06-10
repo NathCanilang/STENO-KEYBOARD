@@ -153,39 +153,27 @@ void keyboard_task(void)
         for (int j = 0; j < MATRIX_ROW; ++j)
         {
             bool pin_state = gpio_get(row_pins[j]);
-            Key* key = &keys[j][i]; //access the specific HIGH key
+            // Key* key = &keys[j][i]; //access the specific HIGH key
             uint32_t current_time = to_ms_since_boot(get_absolute_time()); 
 
-            if (pin_state == true) // this is referring to HIGH
+            if (pin_state) // this is referring to HIGH
             {
-
-                /*
-                Piss poor debounce attempt
-                */
-
-                if(key->key_state == KEY_FREE){
+                
+                if(get_key_states(j, i).key_state == KEY_FREE){
                     
-                    //start the key lockdown
-                    key->start_time = current_time;
-                    key->key_state = KEY_LOCKED_OUT;
-                    key->init_reading = pin_state;
+                    Key key = {
+                        .sample_reading = pin_state,
+                        .key_state = KEY_LOCKED_OUT,
+                        .start_time = current_time
+                    };
+                    set_key_states(j, i, &key);
                 }       
-
-                // horrible code in here
-                if((key->key_state == KEY_LOCKED_OUT) && ((current_time - key->start_time) >= DEBOUNCE_TIME)){
-                    key->key_state = KEY_FREE;
-                    if(key->init_reading == pin_state){
-                        insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap); // store the result once the reading stabilizes
-                    }
-                }
                 current_scan_active = true;
             }
-
-            else
-            {
-                keys[j][i].key_state = KEY_FREE; // release resets
+            Key curr_key = get_key_states(j,i);
+            if(check_debounce_time_elapsed(&curr_key, current_time, pin_state)){
+                insert_keybit_to_bitmap(keymaps[0][j][i], &bitmap);
             }
-
         }
 
         gpio_put(col_pins[i], 0);
