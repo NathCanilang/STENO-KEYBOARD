@@ -12,7 +12,8 @@
 
 enum KeyStates{
     KEY_FREE = 0,
-    KEY_LOCKED_OUT = 1
+    KEY_DEBOUNCING = 1,
+    KEY_HELD_DOWN = 2
 };
 
 typedef struct{
@@ -26,7 +27,7 @@ extern key_t keys[NUM_ROW][NUM_COLUMN];
 void set_key_states(uint8_t row, uint8_t col, key_t* key_states);
 key_t* get_key_states(uint8_t row, uint8_t col);
 void reset_key_debounce_time(uint8_t row, uint8_t col, uint32_t curr_time);
-bool check_debounce_time_elapsed(key_t *key, uint32_t* curr_time, bool curr_pin_state);
+bool is_debounce_time_elapsed(key_t *key, uint32_t* curr_time, bool curr_pin_state);
 
 #endif
 

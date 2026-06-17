@@ -10,12 +10,12 @@ static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
     )
 };
 
-// static enum BytesStatus processing_status = PROCESSING_INPUTS;
+static enum BytesStatus processing_status = PROCESSING_INPUTS;
 
-// enum BytesStatus get_key_process_status()
-// {
-//     return processing_status;
-// }
+enum BytesStatus get_key_process_status()
+{
+    return processing_status;
+}
 
 void insert_keybit_to_bitmap(uint8_t key, unsigned char *bitmap)
 {
@@ -24,20 +24,6 @@ void insert_keybit_to_bitmap(uint8_t key, unsigned char *bitmap)
     uint8_t bitmap_index = key / 8; // bits per byte
     uint8_t input_key_flag = 1 << (key - (bitmap_index * 8));
     bitmap[bitmap_index] |= input_key_flag;
-
-
-    // char msg[64];
-    // snprintf(msg, sizeof(msg),
-    //         "%02X %02X %02X %02X\r\n",
-    //         bitmap[0],
-    //         bitmap[1],
-    //         bitmap[2],
-    //         bitmap[3]);
-
-    // tud_cdc_write(msg, strlen(msg));
-    // tud_cdc_write_flush();
-
-
 }
 
 void reset_array(unsigned char bitmap[])
@@ -58,52 +44,42 @@ void process_raw_bit_input(bool raw_array[MATRIX_ROW][MATRIX_COLUMN], unsigned c
         for(uint8_t j = 0; j < MATRIX_ROW; j++){
             bool key_bit = raw_array[j][i];
 
-            if(key_bit && (get_key_states(j, i)->key_state == KEY_FREE)){
-                // printf("hit\n");
-                //start the count in here
-
-                // const char *msg = "hello\r\n";
-                // tud_cdc_write(msg, strlen(msg));
-                // tud_cdc_write_flush(); 
-
-
-                key_t key = {
+            if(key_bit){
+                if(get_key_states(j, i)->key_state == KEY_FREE){
+                    key_t key = {
                     .sample_reading = key_bit,
-                    .key_state = KEY_LOCKED_OUT,
+                    .key_state = KEY_DEBOUNCING,
                     .start_time = *curr_time
-                    // .start_time = 0
 
-                };
-                set_key_states(j, i, &key);
+                    };
+                    set_key_states(j, i, &key);
+                }
                 current_array_active = true;
+
             }
+            // if(key_bit && ((get_key_states(j, i)->key_state == KEY_FREE))){
+                
+            //     current_array_active = true;
+            // }
+            // else if(key_bit && (get_key_states(j, i)->key_state == KEY_HELD_DOWN)){
+            //     current_array_active = true;
+            // }
             key_t* curr_key = get_key_states(j,i);
-            // printf("Time:%u\n", *curr_time);
-
-            // char msg[64];
-            // snprintf(msg, sizeof(msg),
-            //         "Time: %d\r\n",
-            //         *curr_time);
-
-            // tud_cdc_write(msg, strlen(msg));
-            // tud_cdc_write_flush();
-
-            if(check_debounce_time_elapsed(curr_key, curr_time, key_bit)){
-                // printf("Bit inserted\n");
+            if(is_debounce_time_elapsed(curr_key, curr_time, key_bit)){
                 insert_keybit_to_bitmap(keymaps[0][j][i], buffer);
             }
         }
     }
 
-    // if(current_array_active){
-    //     processing_status = PROCESSING_INPUTS;
-    //     key_stroke_active = current_array_active; 
-    //     return;
-    // }
-    // else if(!current_array_active && key_stroke_active){
-    //     processing_status = BYTES_READY;
-    //     key_stroke_active = current_array_active; 
-    // }
+    if(current_array_active){
+        processing_status = PROCESSING_INPUTS;
+        key_stroke_active = current_array_active; 
+        return;
+    }
+    else if(!current_array_active && key_stroke_active){
+        processing_status = BYTES_READY;
+        key_stroke_active = current_array_active; 
+    }
 
     // if (current_array_active) {
     //     processing_status = PROCESSING_INPUTS;

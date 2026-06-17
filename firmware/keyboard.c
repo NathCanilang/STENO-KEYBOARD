@@ -58,9 +58,6 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
 
 void send_buffer_to_host(unsigned char* buffer){
     tud_cdc_write(buffer, REQUIRED_BYTES);
-    // const char *msg = "hello\r\n";
-
-    // tud_cdc_write(msg, strlen(msg));
     tud_cdc_write_flush(); 
     reset_array(buffer);
 }
@@ -97,7 +94,12 @@ void keyboard_task(void)
     scan_keyboard_matrix(raw_bits); 
     process_raw_bit_input(raw_bits, report_buffer, &current_time);
 
-    if(is_report_buffer_changed(report_buffer)){
+    // if(is_report_buffer_changed(report_buffer)){
+    //     send_buffer_to_host(report_buffer);
+    //     reset_array(report_buffer);
+    // }
+
+    if(get_key_process_status() == BYTES_READY){
         send_buffer_to_host(report_buffer);
         reset_array(report_buffer);
     }

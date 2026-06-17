@@ -5,12 +5,12 @@
 #include "config.h"
 #include "defer_debounce.h"
 
-// enum BytesStatus{
-//     PROCESSING_INPUTS = 0,
-//     BYTES_READY
-// };
+enum BytesStatus{
+    PROCESSING_INPUTS = 0,
+    BYTES_READY
+};
 
-// enum BytesStatus get_key_process_status();
+enum BytesStatus get_key_process_status();
 
 void insert_keybit_to_bitmap(uint8_t key, unsigned char* bitmap);
 void reset_array(unsigned char bitmap[]);

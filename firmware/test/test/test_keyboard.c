@@ -100,7 +100,7 @@ void test_debounce_checker(){
     for(uint8_t i = 0; i < MATRIX_COLUMN; i++){
         for(uint8_t j = 0; j < MATRIX_ROW; j++){
             key_t *curr_key = get_key_states(j,i);
-            if(check_debounce_time_elapsed(curr_key, &t, true)){ // simulate that the time has elapsed and the reading is HIGH = true
+            if(is_debounce_time_elapsed(curr_key, &t, true)){ // simulate that the time has elapsed and the reading is HIGH = true
                 count++;
             }
         }
@@ -126,7 +126,7 @@ void test_debounce_on_free_key(void){
     };
 
     uint32_t t = 1500;
-    bool test_res = check_debounce_time_elapsed(&test_key, &t, false);
+    bool test_res = is_debounce_time_elapsed(&test_key, &t, false);
     printf("test: %d\n\r", test_key.start_time);
 
     TEST_ASSERT_FALSE(test_res);
@@ -145,28 +145,28 @@ void test_bouncing_signal_on_debounce(void)
     bool result = false;
 
     // bounce sequence
-    result = check_debounce_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 1000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 2000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 3000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 4500;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 6000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 8000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 10000;
-    result = check_debounce_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
 
     printf("RESULTS| Start Time: %u, State: %d, Sample: %d\n",
            test_key1.start_time,
