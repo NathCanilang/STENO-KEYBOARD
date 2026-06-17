@@ -1,6 +1,8 @@
 #include "hardware_wrapper.h"
 #include <string.h>
 #include <pico/stdio.h>
+#include <hardware/gpio.h>
+#include <pico/time.h>
 
 #define PIN_COUNT 20
 

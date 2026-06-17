@@ -4,7 +4,7 @@
 #include <tusb.h>
 #include <pico/stdio.h>
 #include "keyboard.h"
-
+#include <hardware/gpio.h>
 
 void pin_init(void){
     // intialize all rows and col pins
@@ -36,20 +36,6 @@ void pin_init(void){
         gpio_pull_down(row_pins[i]);
     }
 }
-
-// Invoked when CDC interface received data from host
-// void tud_cdc_rx_cb(uint8_t itf)
-// {
-//     (void) itf;
-
-//     uint8_t buf[64];
-//     uint32_t count = tud_cdc_read(buf, sizeof(buf));
-
-//     // Echo back to host
-//     tud_cdc_write("rec: ", 5);
-//     tud_cdc_write(buf, count);
-//     tud_cdc_write_flush();
-// }
 
 int main(void)
 {

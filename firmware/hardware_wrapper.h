@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "debounce.h"
+#include "defer_debounce.h"
 
 //pin utils
 void init_pins(uint8_t pin);
