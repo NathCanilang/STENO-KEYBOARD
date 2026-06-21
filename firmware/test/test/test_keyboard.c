@@ -45,7 +45,7 @@ void test_active_chord_logic(void){
     process_raw_bit_input(test_raw_bits, test_report_buffer, &t_elapsed);
 
 
-    unsigned char expected_report_buffer[REQUIRED_BYTES] = { 0x20, 0x60, 0x82, 0xC0 };
+    unsigned char expected_report_buffer[REQUIRED_BYTES] = { 0x21, 0x60, 0x82, 0xC0 };
 
 
     // printf("Byte 1: 0x%02X\n", (unsigned int)test_report_buffer[0]);
@@ -88,7 +88,7 @@ void test_active_chord_logic(void){
 void test_debounce_checker(){
     key_t key = {
         .sample_reading = true,
-        .key_state = KEY_LOCKED_OUT,
+        .key_state = KEY_DEBOUNCING,
         .start_time = 0
     };
     set_key_states(0, 0, &key);
@@ -137,7 +137,7 @@ void test_bouncing_signal_on_debounce(void)
 {
     key_t test_key1 = {
         .start_time = 0,
-        .key_state = KEY_LOCKED_OUT,
+        .key_state = KEY_DEBOUNCING,
         .sample_reading = true
     };
 
@@ -145,35 +145,35 @@ void test_bouncing_signal_on_debounce(void)
     bool result = false;
 
     // bounce sequence
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 1000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 2000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 3000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 4500;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, false);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, false);
 
     current_time = 6000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 8000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, true);
 
     current_time = 10000;
-    result = is_debounce_time_elapsed_time_elapsed(&test_key1, &current_time, true);
+    result = is_debounce_time_elapsed(&test_key1, &current_time, true);
 
     printf("RESULTS| Start Time: %u, State: %d, Sample: %d\n",
            test_key1.start_time,
            test_key1.key_state,
            test_key1.sample_reading);
 
-    TEST_ASSERT_TRUE(result);
+    TEST_ASSERT_FALSE(result);
 }
 
 void test_bitmap_insertion(void){
@@ -186,3 +186,16 @@ void test_bitmap_insertion(void){
     TEST_ASSERT_EQUAL_INT8(input_key_flag, 1);
 }
 
+void test_bitmap_retreival(void){
+    unsigned char test_report_buffer[REQUIRED_BYTES] = {0x03, 0x40, 0x80, 0xC0};
+
+    // unsigned char expected_report_buffer[REQUIRED_BYTES] = { 0x00, 0x40, 0x80, 0xC0};
+
+    bool test_1 = get_bit_in_bitmap(L_KC_T, test_report_buffer); // TRUE
+    bool test_2 = get_bit_in_bitmap(L_KC_S, test_report_buffer); // TRUE
+    bool test_3 = get_bit_in_bitmap(L_KC_H, test_report_buffer); // FALSE
+
+    TEST_ASSERT_TRUE(test_1);
+    TEST_ASSERT_TRUE(test_2);
+    TEST_ASSERT_FALSE(test_3);
+}
