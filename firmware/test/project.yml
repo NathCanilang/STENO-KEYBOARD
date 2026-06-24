@@ -103,13 +103,14 @@
     # - src/**
     - ..
     - ../sys_debounce
-
+    
   :include:
     # - src/** # In simple projects, this entry often duplicates :source
     - ..
     - ../sys_debounce
-  # :support:
-  #   - test/support
+  :support:
+    - test/support
+    
   :libraries: []
 
 # You can even specify specific files to add or remove from your test
@@ -118,6 +119,8 @@
 :files:
   :test: []
   :source: []
+  :exclude:
+    - ../hal_pico.c
 
 # Compilation symbols to be injected into builds
 # See documentation for advanced options:

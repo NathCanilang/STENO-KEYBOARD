@@ -35,9 +35,11 @@ pico_sdk_init()
 add_executable(Steno-Keyboard 
     Steno-Keyboard.c
     usb_descriptors.c
-    keyboard.c
-    hardware_wrapper.c
-    k_logic.c
+    matrix.c
+    logic.c
+    hal_pico.c
+    usb.c
+
 )
 
 pico_set_program_name(Steno-Keyboard "Steno-Keyboard")

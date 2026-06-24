@@ -1,53 +1,31 @@
 #include "defer_debounce.h"
+#include <string.h>
+#include "hal.h"
+#include "config.h"
 
-key_t keys[NUM_ROW][NUM_COLUMN] = {0};
-
-void set_key_states(uint8_t row, uint8_t col, key_t* key_states)
+bool debounce_time_elapsed(bool raw_reading[], bool debounced_reading[], bool state_changed)
 {
-    keys[row][col] = *key_states;
-}
+    static uint32_t debounce_time_start;
+    static bool debouncing = false;
+    bool is_current_readings_changed = false;
 
-key_t* get_key_states(uint8_t row, uint8_t col)
-{
-    return &keys[row][col];
-}
+    printf("Debouncing: %d\n", debouncing);
 
-void reset_key_debounce_time(uint8_t row, uint8_t col, uint32_t curr_time)
-{
-    keys[row][col].start_time = curr_time;
-}
-
-bool is_debounce_time_elapsed(key_t *key, uint32_t* curr_time, bool curr_pin_state)
-{
-    uint32_t calculated_key_time = *curr_time - key->start_time;
-
-    if(key->key_state == KEY_HELD_DOWN){
-        // this is when the user released the key it will reset the status of the key
-        if(curr_pin_state == 0){
-            key->key_state = KEY_FREE;
-            key->sample_reading = 0; //reset the boolean just in case
-            key->start_time = 0;
-        }
-        return false;
+    size_t size = (MATRIX_ROW * MATRIX_COLUMN) * sizeof(bool);
+    if(state_changed){
+        debouncing = true;
+        debounce_time_start = time_us();
+        // printf("Time set: %d\n", time_us());
+        // printf("first\n");
     }
-
-    if(key->key_state == KEY_FREE){
-        return false;
-    }
-
-    if(key->key_state == KEY_DEBOUNCING){
-
-        if(key->sample_reading == 0){
-            key->key_state = KEY_FREE;
-            key->start_time = 0;
-            return false;
+    else if(debouncing && (time_us() - debounce_time_start) >= DEBOUNCE_TIME){
+        // printf("Hit in here\n");
+        if(memcmp(raw_reading, debounced_reading, size) != 0){
+            memcpy(debounced_reading, raw_reading, size);
+            is_current_readings_changed = true;
+            // printf("debouncing done\n");
         }
-
-        if(calculated_key_time >= DEBOUNCE_TIME){
-            key->key_state = KEY_HELD_DOWN;
-            return true;
-        }
-        return false;
+        debouncing = false;
     }
-    return false;
+    return is_current_readings_changed;
 }
