@@ -1,7 +1,7 @@
 #include <tusb.h>
 #include <bsp/board_api.h>
 #include "matrix.h"
-#include "usb.h" //temporary
+#include "logic.h"
 
 int main(void)
 {
@@ -14,6 +14,7 @@ int main(void)
     while (true) {
         tud_task();
         // keyboard_task();
+        process_keyboard_input();
     }
     return 0;
 }

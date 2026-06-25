@@ -9,7 +9,7 @@ bool debounce_time_elapsed(bool raw_reading[], bool debounced_reading[], bool st
     static bool debouncing = false;
     bool is_current_readings_changed = false;
 
-    printf("Debouncing: %d\n", debouncing);
+    // printf("Debouncing: %d\n", debouncing);
 
     size_t size = (MATRIX_ROW * MATRIX_COLUMN) * sizeof(bool);
     if(state_changed){

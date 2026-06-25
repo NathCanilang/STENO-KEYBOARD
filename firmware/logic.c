@@ -1,9 +1,7 @@
 #include <string.h>
 #include "logic.h"
-#include "defer_debounce.h"
-
-#define KEY_PRESSED 1
-#define KEY_IDLE    0
+#include "matrix.h"
+#include "usb.h"
 
 // based on QMK's style of declaration
 static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
@@ -14,40 +12,73 @@ static const uint32_t keymaps[][MATRIX_ROW][MATRIX_COLUMN] = {
     )
 };
 
+unsigned char report_buffer[REQUIRED_BYTES] = {0x00, 0x40, 0x80, 0xC0};
+
 /*
 TX BOLT = 00HWPKTS 01UE*OAR 10GLBPRF 110#ZDST
 */
-void update_processed_bitmap(uint8_t key, unsigned char *bitmap)
-{
-    if(key == KC_NONE){ return; };
-    
-    uint8_t bitmap_index = key / 8; // bits per byte
-    uint8_t input_key_flag = 1 << (key - (bitmap_index * 8));
-    bitmap[bitmap_index] |= input_key_flag;
+void update_bitmap(void)
+{    
+    for(int col = 0; col < MATRIX_COLUMN; col++){
+        for(int row = 0; row < MATRIX_ROW; row++){
+            bool bit = matrix_deb[(row * MATRIX_COLUMN) + col];
+            if(bit){
+                // char buffer[64] = "Pressed";
+                // tud_cdc_write(buffer, sizeof(buffer));
+                // tud_cdc_write_flush(); 
+
+                uint8_t key = keymaps[0][row][col];
+                uint8_t bitmap_index = key / 8; // bits per byte
+                uint8_t input_key_flag = 1 << (key - (bitmap_index * 8));
+                report_buffer[bitmap_index] |= input_key_flag;
+            }
+        }
+    }
+
 }
 
-void reset_array(unsigned char bitmap[])
+bool matrix_is_empty(void)
+{
+    for(size_t i = 0; i < MATRIX_ROW * MATRIX_COLUMN; i++)
+    {
+        if(matrix_deb[i])
+            return false;
+    }
+
+    return true;
+}
+
+void reset_report_buffer(void)
 {
     //reset the TX Bolt bitmap flags placement kasi why not do it the manual way
-    bitmap[0] = 0x00;
-    bitmap[1] = 0x40;
-    bitmap[2] = 0x80;
-    bitmap[3] = 0xC0;
+    report_buffer[0] = 0x00;
+    report_buffer[1] = 0x40;
+    report_buffer[2] = 0x80;
+    report_buffer[3] = 0xC0;
 }
 
-void process_raw_bit_input(uint32_t* curr_time)
+void process_keyboard_input(void)
 {
-    // bool is_state_changed = memcmp(matrix_raw, matrix_curr, sizeof(matrix_curr)) != 0;
+    static bool stroke_active = false;
+    bool key_changed = scan_keyboard_matrix();
 
-    // if(is_state_changed){ memcpy(matrix_raw, matrix_curr, sizeof(matrix_curr)); }
-    // bool is_matrix_debounced = debounce_time_elapsed(matrix_prev, matrix_raw, is_state_changed, *curr_time, (MATRIX_ROW * MATRIX_COLUMN));
+    if(!key_changed) return;
 
+    update_bitmap();
+    // printf("bitmap updated\n");
+    bool is_empty = matrix_is_empty();
 
-    
+    if(!stroke_active && !is_empty)
+    {
+        // printf("stroke is currently active\n");
+        stroke_active = true;
+    }
+
+    if(stroke_active && is_empty)
+    {
+        // printf("sending\n");
+        send_packet_to_host(report_buffer);
+        reset_report_buffer();
+        stroke_active = false;
+    }
 }
-
-/*
-Problems gathered
-- if the key has passed the debounced part and lifted the key it is not erased from the buffer (must add a checker if the key flags are still the same)
-- machine gun input from the right T and S key (don't know why)
-*/

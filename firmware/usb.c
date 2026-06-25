@@ -25,9 +25,8 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
     (void)bufsize;
 }
 
-void send_packet_to_host(void)
+void send_packet_to_host(unsigned char buffer[])
 {
-    unsigned char buffer[REQUIRED_BYTES];
     tud_cdc_write(buffer, REQUIRED_BYTES);
     tud_cdc_write_flush(); 
 }

@@ -5,8 +5,6 @@
 #include <stdbool.h>
 // #include "pico/stdlib.h"
 
-#define DEBOUNCE_TIME   5 // this is in ms
-
 bool debounce_time_elapsed(bool raw_reading[], bool debounced_reading[], bool state_changed);
 
 #endif

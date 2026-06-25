@@ -78,3 +78,5 @@
 #define R_KC_D        0x1A
 #define R_KC_S        0x19 
 #define R_KC_T        0x18 
+
+#define DEBOUNCE_TIME 5000

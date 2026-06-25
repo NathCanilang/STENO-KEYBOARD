@@ -8,7 +8,8 @@
 extern bool matrix_raw[MATRIX_ROW * MATRIX_COLUMN];
 extern bool matrix_prev[MATRIX_ROW * MATRIX_COLUMN];
 
-void update_processed_bitmap(uint8_t key, unsigned char* bitmap);
-void reset_array(unsigned char bitmap[]);
-void process_raw_bit_input(uint32_t* curr_time);
+void update_bitmap(void);
+bool matrix_is_empty(void);
+void reset_report_buffer(void);
+void process_keyboard_input(void);
 #endif
